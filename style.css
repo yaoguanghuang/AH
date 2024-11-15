@@ -44,6 +44,38 @@ h1{
     text-decoration:underline;
 }
 
+.sidebar-footer {
+display: flex;
+ justify-content: left;
+ position: fixed;  
+ bottom: 50px;
+ width:200px;
+ padding-left:40px;
+}
+
+.sidebar-footer img {
+    width: auto;   
+    height: 30px;
+    transform: scale(0.75);  
+}
+
+.sidebar-footer a:hover img {
+    opacity: 0; /* Make original image disappear */
+}
+
+.sidebar-footer a:hover::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: 30px;
+    transform: scale(0.75);
+    background-image: url('instahover.png'); 
+    background-size: cover;
+    background-position: center;
+}
+
 .Contents {
     margin-left: 220px; 
     padding: 20px;
@@ -67,7 +99,7 @@ footer {
     text-align: center;
     position: fixed; 
     width: 100%; 
-    bottom: 15px;
+    bottom: 50px;
     padding-left:180px;
     font-family:Arial, Helvetica, sans-serif;
 }
