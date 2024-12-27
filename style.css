@@ -66,7 +66,7 @@
 }
 
 .Contents p{
-    width:800px;
+    width:900px;
     margin:auto;
     text-align: left;
     font-family: "Saira Condensed", sans-serif;
@@ -209,17 +209,16 @@
 
 .SwearJar{
     margin:auto;
-    height:515px;
-    width:750px;
-    border:1px white;
+    height:620px;
+    width:900px;
     overflow-x:scroll;
     margin-bottom:5px;
     margin-top:30px;
 }
 
 .SwearJar img {
-    width: 375px;   
-    height: 500px;
+    width: 450px;   
+    height: 600px;
     transform: scale(1);  
 }
 
