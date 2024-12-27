@@ -224,92 +224,92 @@
 
 .Smoke{
     margin:auto;
-    height:500px;
-    width:750px;
+    height:600px;
+    width:900px;
     display:flex;
     margin-bottom:5px;
     margin-top:30px;
 }
 
 .Smoke img{
-    width:375px;
-    height:500px;
+    width:450px;
+    height:600px;
     transform: scale(1);
 }
 
 .ADate{
     margin:auto;
-    height:500px;
-    width:750px;
+    height:600px;
+    width:900px;
     display:flex;
     margin-bottom:5px;
     margin-top:30px;
 }
 
 .ADate.img{
-    width:375px;
-    height:500px;
+    width:450px;
+    height:600px;
     transform: scale(1);
 }
 
 
 .Shoellace{
     margin:auto;
-    height:500px;
-    width:375px;
+    height:600px;
+    width:450px;
     display:flex;
     margin-bottom:5px;
     margin-top:30px;
 }
 
 .Shoellace.img{
-    width:375px;
-    height:500px;
+    width:450px;
+    height:600px;
     transform: scale(1);
 }
 
 .Nightmare{
     margin:auto;
-    height:375px;
-    width:375px;
+    height:450px;
+    width:450px;
     display:flex;
     margin-bottom:5px;
     margin-top:30px;
 }
 
 .Nightmare img{
-    width:375px;
-    height:375px;
+    width:450px;
+    height:450px;
     transform: scale(1);
 }
 
 .Eyedrop{
     margin:auto;
-    height:375px;
-    width:375px;
+    height:450px;
+    width:450px;
     display:flex;
     margin-bottom:5px;
     margin-top:30px;
 }
 
 .Eyedrop img{
-    width:375px;
-    height:375px;
+    width:450px;
+    height:450px;
     transform: scale(1);
 }
 
 .AGift{
     margin:auto;
-    height:375px;
-    width:375px;
+    height:450px;
+    width:450px;
     display:flex;
     margin-bottom:5px;
     margin-top:30px;
 }
 
 .AGift img{
-    width:375px;
-    height:375px;
+    width:450px;
+    height:450px;
     transform: scale(1);
 }
 
@@ -318,7 +318,7 @@ footer {
     margin-left:14%;
     background: white;
     text-align: center;
-    position: fixed; 
+    /* position: fixed;  */
     width: 84.9%; 
     height:8%;
     padding-top: 2%;
