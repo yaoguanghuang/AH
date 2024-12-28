@@ -1,18 +1,9 @@
-/* General */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    height: 100vh;
-    display: flex;
-    align-items: center;
+.comicbook {
+    margin:auto;
+    height:600px;
+    width:86%;
     justify-content: center;
-    font-family: sans-serif;
-    background-color: white;
+    margin-bottom:20px;
 }
 
 /* Button */

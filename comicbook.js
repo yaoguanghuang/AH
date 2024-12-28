@@ -25,6 +25,13 @@ let currentState = 1;
 let numOfPapers = 15; // Updated to 6 pages
 let maxState = numOfPapers + 1; // maxState should be 7
 
+document.addEventListener("DOMContentLoaded", () => {
+    openBook();
+    paper1.classList.add("flipped");
+    paper1.style.zIndex = 1;
+    currentState = 2;
+});
+
 function openBook() {
     book.style.transform = "translateX(50%)";
     prevBtn.style.transform = "translateX(-230px)";
