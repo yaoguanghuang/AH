@@ -32,6 +32,13 @@
     text-decoration:underline;
 }
 
+.sidebar ul li{
+    display: flex;
+    align-items: center; 
+    gap: 5px; 
+    margin: 10px 0; 
+}
+
 .sidebar-footer {
  display: flex;
  justify-content: center;
@@ -200,117 +207,19 @@
 }
 
 .C19E{
-    height:3500px;
+    height:4280px;
     width:100%;
     margin:auto;
     justify-content: center;
     flex-direction: column;
 }
 
-.SwearJar{
+.HerChoice{
+    height:4280px;
+    width:100%;
     margin:auto;
-    height:620px;
-    width:900px;
-    overflow-x:scroll;
-    margin-bottom:5px;
-    margin-top:30px;
-}
-
-.SwearJar img {
-    width: 450px;   
-    height: 600px;
-    transform: scale(1);  
-}
-
-.Smoke{
-    margin:auto;
-    height:600px;
-    width:900px;
-    display:flex;
-    margin-bottom:5px;
-    margin-top:30px;
-}
-
-.Smoke img{
-    width:450px;
-    height:600px;
-    transform: scale(1);
-}
-
-.ADate{
-    margin:auto;
-    height:600px;
-    width:900px;
-    display:flex;
-    margin-bottom:5px;
-    margin-top:30px;
-}
-
-.ADate.img{
-    width:450px;
-    height:600px;
-    transform: scale(1);
-}
-
-
-.Shoellace{
-    margin:auto;
-    height:600px;
-    width:450px;
-    display:flex;
-    margin-bottom:5px;
-    margin-top:30px;
-}
-
-.Shoellace.img{
-    width:450px;
-    height:600px;
-    transform: scale(1);
-}
-
-.Nightmare{
-    margin:auto;
-    height:450px;
-    width:450px;
-    display:flex;
-    margin-bottom:5px;
-    margin-top:30px;
-}
-
-.Nightmare img{
-    width:450px;
-    height:450px;
-    transform: scale(1);
-}
-
-.Eyedrop{
-    margin:auto;
-    height:450px;
-    width:450px;
-    display:flex;
-    margin-bottom:5px;
-    margin-top:30px;
-}
-
-.Eyedrop img{
-    width:450px;
-    height:450px;
-    transform: scale(1);
-}
-
-.AGift{
-    margin:auto;
-    height:450px;
-    width:450px;
-    display:flex;
-    margin-bottom:5px;
-    margin-top:30px;
-}
-
-.AGift img{
-    width:450px;
-    height:450px;
-    transform: scale(1);
+    justify-content: center;
+    flex-direction: column;
 }
 
 footer {
