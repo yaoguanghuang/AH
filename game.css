@@ -1,0 +1,170 @@
+.sidebar{
+    height:100%;
+    width: 14%;
+    position:absolute;
+    position: fixed; 
+    background-color: rgb(233, 233, 233);
+}
+
+.sidebar h1{
+    color:black;
+    text-align: center;
+    pointer-events: none;
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size:36px;
+}
+
+.sidebar li {
+    display: block;
+    font-size: 20px;
+    padding-left: 10%;
+    color:black;
+    list-style: none;
+    margin-bottom: 8px;
+    font-family: "Pixelify Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.sidebar li a {
+    display: block;
+    color:black;
+    text-decoration:underline;
+}
+
+.sidebar ul li{
+    display: flex;
+    align-items: center; 
+    gap: 5px; 
+    margin: 10px 0; 
+}
+
+.Contents {
+    margin-left: 15%; 
+    width:85%;
+    padding-top: 0.5%;
+    padding-bottom:10%;
+}
+
+.Contents h1 {
+    color:rgb(0, 0, 0);
+    font-size: 96px;
+    width: 900px;
+    margin:auto;
+    pointer-events: none;
+    font-family: "Silkscreen", sans-serif;
+    font-style: normal;
+    padding-bottom: 1%;
+}
+
+.Contents h2 {
+    color:rgb(0, 0, 0);
+    font-size: 48px;
+    width: 900px;
+    margin:auto;
+    pointer-events: none;
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 700;
+    padding-top: 20%;
+}
+
+.Contents p{
+    width:900px;
+    margin:auto;
+    text-align: left;
+    font-family: "Pixelify Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+.Contents p em {
+    font-style: italic;
+    font-weight:bold;
+  }
+
+.Caption {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-color: rgb(233, 233, 233);
+    margin:auto;
+    width:860px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 10%;
+}
+
+.Caption h3{
+    color:rgb(0, 0, 0);
+    font-size: 30px;
+    width: 860px;
+    text-align: left;
+    margin:auto;
+    pointer-events: none;
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.Caption p{
+    margin: auto;
+    font-family: "Pixelify Sans", sans-serif;
+    text-align: left;
+    font-weight: 400;
+    font-size: 18px;
+    flex: 1 1 calc(30% - 10px); 
+    min-width: 150px;
+    padding-bottom: 5px;
+}
+
+.Caption p em{
+    font-weight: 700;
+    font-style: normal;
+}
+
+.GameColumn{
+    margin:auto;
+    height:505px;
+    width:800px;
+    justify-content: center;
+    margin-bottom:10px;
+    margin-top:20px;
+    background-color:white;
+}
+
+.GameColumn:hover {
+    background-color: white; 
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    color: black;
+    margin-left:14%;
+    background: white;
+    text-align: center;
+    /* position: fixed;  */
+    width: 84.9%; 
+    height:8%;
+    padding-top: 2%;
+    bottom:0;
+    font-size:20px;
+    font-family: "Pixelify Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+footer em {
+    font-weight: 700;
+    font-style: normal;
+}
+
+.Contents div {
+    display: flex;
+}
