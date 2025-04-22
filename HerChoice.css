@@ -1,0 +1,93 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-right: 1px solid rgba(255, 255, 255, 0.4);
+    padding-left: 20px;
+    transition: width 0.3s ease;
+}
+
+.sidebar:hover {
+    width: 150px;
+}
+
+.sidebar:hover h1 {
+    display: block;
+}
+
+.sidebar:hover h4 {
+    display: block;
+}
+
+.sidebar h1
+{
+    font-family: "Saira Condensed", sans-serif;
+    font-size: 48px;
+    padding-left: 20px; 
+    margin: 20px 0 20px 0;
+    display: none;
+}
+
+.sidebar h4 {
+    font-family: "Saira Condensed", sans-serif;
+    padding-left: 10px; 
+    font-size: 20px;
+    margin: 0px 0 0px 0;
+    display: none;
+}
+
+.sidebar .Links {
+    list-style: none;
+    padding-left: 0; 
+    margin-left: 0;
+}
+
+.Links li {
+    font-family: "Saira Condensed", sans-serif;
+    font-size: 20px;
+    color: black;
+    display: flex;
+    white-space: nowrap;
+    align-items: center;
+    padding: 0;
+    margin-left: 0; 
+}
+
+.Links li:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.Links li span {
+    padding: 12px 10px;
+}
+
+.Links li a {
+    color: black;
+    text-decoration: none;
+    align-items: center;
+    padding-left: 0; 
+    display: none;
+}
+
+.sidebar:hover .Links li a {
+    display: block;
+}
+
+.Portfolio{
+    width:100%;
+    margin:auto;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Contents div{
+    display: flex;
+}
