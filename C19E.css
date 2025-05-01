@@ -1,100 +1,167 @@
-.sidebar{
-    height:100%;
-    width: 14%;
-    position:absolute;
-    position: fixed; 
-    background-color: rgb(0, 47, 167);
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.sidebar li {
-    display: block;
-    font-size: 20px;
-    color:white;
-    font-family: "Roboto Flex", serif;
-    font-weight: 600;
-    line-height: 1.2;
-    margin-bottom: 12px;
-    margin-left: 25%;
-    margin-right: 25%;
+body{
+    background-color: white;
 }
 
-.sidebar li a {
-    display: block;
-    color:white;
-    text-decoration:none;
+html, body {
+    height: 100%;
+    width: 100%;
 }
 
-.sidebar ul li{
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 4%;
+    height: 100%;
     display: flex;
-    align-items: center; 
-    gap: 8px; 
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-right: 1px solid rgba(255, 255, 255, 0.4);
+    padding-left: 30px;
+    transition: width 0.3s ease;
+    overflow: hidden;
 }
 
-.sidebar ul{
-    padding:0;
+.sidebar:hover {
+    width: 10%;
 }
 
-.sidebar img{
-    width:auto;
-    height:130px;
-    padding-top: 50px;
-    padding-bottom: 20px;
-    display: block;  
-    margin-left:20%
+.sidebar h1 {
+    font-family: "Fredoka", sans-serif;
+    font-size: 40px;
+    margin: 0;
+    display: block;
+    font-weight: 600;
+    position: relative;
+    color: transparent;
+  }
+  
+  .sidebar h1::before {
+    content: "A.";
+    color: #05269c;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 2px;
+    display: block;
+  }  
+  
+  .sidebar:hover h1::before {
+    content: "Auro.";
+  }  
+
+.sidebar .Links {
+    list-style: none;
+    padding-left: 0px; 
+    margin-left: 0;
 }
 
-.Contents {
-    margin-left: 14%; 
-    width:86%;
-    padding-top: 0.5%;
-    padding-bottom:10%;
-}
-
-.Contents h1 {
-    color:rgb(0, 0, 0);
-    font-size: 50px;
-    text-align: center;
-    pointer-events: none;
-    font-family: "Notable", sans-serif;
+.Links li {
+    width:100%;
+    font-family: "Fredoka", sans-serif;
+    font-size: 16px;
+    color: #05269c;
+    display: flex;
+    white-space: nowrap;
+    align-items: center;
+    padding: 0;
+    margin-left: 0; 
+    overflow: hidden;
     font-weight: 400;
-    font-style: normal;
 }
 
-.Contents p{
-    width:900px;
-    margin:auto;
-    text-align: left;
-    font-family: "Saira Condensed", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    padding-bottom:10px;
+.Links li span{
+    font-size: 18px;
+}
+
+.Links li span.fa-solid.fa-fingerprint
+{
+    font-size: 22px;
+}
+
+.Links li span.fa-solid.fa-square-envelope {
+    font-size: 22px; 
+}
+
+.Links li span.fa-brands {
+    font-size: 22px; 
+}
+
+.Links li:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 8px;
+}
+
+.Links .footer {         
+    padding-top: 240px; 
+    color: #05269c;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.Links .footer:hover {        
+    background-color: rgba(255, 255, 255, 0);
     font-size: 16px;
 }
 
-.C19E{
-    height:4280px;
-    width:100%;
-    margin:auto;
+.Links .footer span{
+    font-size:20px;
+    padding: 5px 0px;
+}
+
+.Links hr {
+    margin-top: 7.5px;
+    margin-bottom: 7.5px;
+    border: none; 
+    background-color: #05269c; 
+    height: 1.5px; 
+    display: block; 
+    border-radius: 1000px;
+}
+
+.Links li span {
+    color: #05269c;
+    padding: 12px 5px;
+    flex-shrink: 0;
+}
+
+.Links li a {
+    color: #05269c;
+    text-decoration: none;
+    align-items: center;
+    padding: 0px 0px 0px 5px;
+    display: none;
+}
+
+.sidebar:hover .Links li {
+    width: 120px;
+}
+
+.sidebar:hover .Links li a {
+    display: block;
+}
+
+.Portfolio {
+    padding-left: 4%;
+    width: 96%;
+    margin: auto;
     justify-content: center;
     flex-direction: column;
+    display: flex;
 }
 
-footer {
-    color: #002fa7;
-    margin-left:14%;
-    background: white;
-    text-align: center;
-    /* position: fixed;  */
-    width: 84.9%; 
-    height:8%;
-    padding-top: 2%;
-    bottom:0;
-    font-size:18px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
-    font-style: normal;
-}
-
-.Contents div {
+.Cover {
+    padding-left: 0%;
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+    flex-direction: column;
     display: flex;
 }

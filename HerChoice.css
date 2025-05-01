@@ -1,8 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: #ebe2c1;
+}
+
+/*SideBar*/
 .sidebar {
     position: fixed;
     top: 0;
     left: 0;
-    width: 60px;
+    width: 4%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -11,83 +25,142 @@
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border-right: 1px solid rgba(255, 255, 255, 0.4);
-    padding-left: 20px;
+    padding-left: 30px;
     transition: width 0.3s ease;
 }
 
 .sidebar:hover {
-    width: 150px;
+    width: 10%;
 }
 
-.sidebar:hover h1 {
+.sidebar h1 {
+    font-family: "Fredoka", sans-serif;
+    font-size: 40px;
+    margin: 0;
     display: block;
-}
-
-.sidebar:hover h4 {
+    font-weight: 600;
+    position: relative;
+    color: transparent;
+  }
+  
+  .sidebar h1::before {
+    content: "A.";
+    color: #5c370e;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 2px;
     display: block;
-}
-
-.sidebar h1
-{
-    font-family: "Saira Condensed", sans-serif;
-    font-size: 48px;
-    padding-left: 20px; 
-    margin: 20px 0 20px 0;
-    display: none;
-}
-
-.sidebar h4 {
-    font-family: "Saira Condensed", sans-serif;
-    padding-left: 10px; 
-    font-size: 20px;
-    margin: 0px 0 0px 0;
-    display: none;
-}
+  }  
+  
+  .sidebar:hover h1::before {
+    content: "Auro.";
+  }  
 
 .sidebar .Links {
     list-style: none;
-    padding-left: 0; 
+    padding-left: 0px; 
     margin-left: 0;
 }
 
 .Links li {
-    font-family: "Saira Condensed", sans-serif;
-    font-size: 20px;
-    color: black;
+    width:100%;
+    font-weight: 400;
+    font-size: 16px;
+    color: #5c370e;
     display: flex;
     white-space: nowrap;
     align-items: center;
     padding: 0;
     margin-left: 0; 
+    overflow: hidden;
+    font-family: "Fredoka", sans-serif;
+}
+
+.Links li span{
+    font-size: 18px;
+}
+
+.Links li span.fa-solid.fa-fingerprint
+{
+    font-size: 22px;
+}
+
+.Links li span.fa-solid.fa-square-envelope {
+    font-size: 22px; 
+}
+
+.Links li span.fa-brands {
+    font-size: 22px; 
 }
 
 .Links li:hover {
     background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 8px;
+}
+
+.Links .footer {         
+    padding-top: 240px; 
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.Links .footer:hover {        
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 16px;
+}
+
+.Links .footer span{
+    font-size:20px;
+    padding: 5px 0px;
+}
+
+.Links hr {
+    margin-top: 7.5px;
+    margin-bottom: 7.5px;
+    border: none; 
+    background-color: #5c370e; 
+    height: 1.5px; 
+    display: block; 
+    border-radius: 1000px;
 }
 
 .Links li span {
-    padding: 12px 10px;
+    color: #5c370e;
+    padding: 12px 5px;
+    flex-shrink: 0;
 }
 
 .Links li a {
-    color: black;
+    color: #5c370e;
     text-decoration: none;
     align-items: center;
-    padding-left: 0; 
+    padding: 0px 0px 0px 5px;
     display: none;
+}
+
+.sidebar:hover .Links li {
+    width: 120px;
 }
 
 .sidebar:hover .Links li a {
     display: block;
 }
 
-.Portfolio{
-    width:100%;
-    margin:auto;
+/*DirectContents*/
+.Portfolio {
+    padding-left: 4%;
+    width: 96%;
+    margin: auto;
     justify-content: center;
     flex-direction: column;
+    display: flex;
 }
 
-.Contents div{
+.Cover {
+    width: 100%;
+    height: 100vh; 
+    margin: 0;
+    padding: 0%;
+    flex-direction: column;
     display: flex;
 }

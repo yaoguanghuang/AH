@@ -1,59 +1,153 @@
-.sidebar{
-    height:100%;
-    width:14%;
-    position:absolute;
-    position: fixed; 
-}
-.sidebar h1{
-    color:black;
-    text-align: center;
-    pointer-events: none;
-    font-family: "Notable", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size:30px;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.sidebar li {
-    display: block;
-    font-size: 20px;
-    padding-left: 10%;
-    color:black;
-    list-style: none;
-    margin-bottom: 8px;
-    font-family: "Saira Condensed", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+body{
+    background-color: white;
 }
 
-.sidebar li a {
-    display: block;
-    color:black;
-    text-decoration:underline;
+html, body {
+    height: 100%;
+    width: 100%;
 }
 
-.sidebar ul li{
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 4%;
+    height: 100%;
     display: flex;
-    align-items: center; 
-    gap: 5px; 
-    margin: 10px 0; 
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-right: 1px solid rgba(255, 255, 255, 0.4);
+    padding-left: 30px;
+    transition: width 0.3s ease;
+    overflow: hidden;
 }
 
-.sidebar-footer {
- display: flex;
- justify-content: center;
- position: fixed;  
- bottom:0px;
- width:14%;
- height:8%;
- padding-top: 2%;
+.sidebar:hover {
+    width: 10%;
 }
 
-.sidebar-footer img {
-    width: auto;   
-    height: 28px;
-    transform: scale(0.85);  
+.sidebar h1 {
+    font-family: "Fredoka", sans-serif;
+    font-size: 40px;
+    margin: 0;
+    display: block;
+    font-weight: 600;
+    position: relative;
+    color: transparent;
+  }
+  
+  .sidebar h1::before {
+    content: "A.";
+    color: #05269c;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 2px;
+    display: block;
+  }  
+  
+  .sidebar:hover h1::before {
+    content: "Auro.";
+  }  
+
+.sidebar .Links {
+    list-style: none;
+    padding-left: 0px; 
+    margin-left: 0;
 }
+
+.Links li {
+    width:100%;
+    font-family: "Fredoka", sans-serif;
+    font-size: 16px;
+    color: #05269c;
+    display: flex;
+    white-space: nowrap;
+    align-items: center;
+    padding: 0;
+    margin-left: 0; 
+    overflow: hidden;
+    font-weight: 400;
+}
+
+.Links li span{
+    font-size: 18px;
+}
+
+.Links li span.fa-solid.fa-fingerprint
+{
+    font-size: 22px;
+}
+
+.Links li span.fa-solid.fa-square-envelope {
+    font-size: 22px; 
+}
+
+.Links li span.fa-brands {
+    font-size: 22px; 
+}
+
+.Links li:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 8px;
+}
+
+.Links .footer {         
+    padding-top: 240px; 
+    color: #05269c;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.Links .footer:hover {        
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 16px;
+}
+
+.Links .footer span{
+    font-size:20px;
+    padding: 5px 0px;
+}
+
+.Links hr {
+    margin-top: 7.5px;
+    margin-bottom: 7.5px;
+    border: none; 
+    background-color: #05269c; 
+    height: 1.5px; 
+    display: block; 
+    border-radius: 1000px;
+}
+
+.Links li span {
+    color: #05269c;
+    padding: 12px 5px;
+    flex-shrink: 0;
+}
+
+.Links li a {
+    color: #05269c;
+    text-decoration: none;
+    align-items: center;
+    padding: 0px 0px 0px 5px;
+    display: none;
+}
+
+.sidebar:hover .Links li {
+    width: 120px;
+}
+
+.sidebar:hover .Links li a {
+    display: block;
+}
+
 
 .Contents {
     margin-left: 14%; 
@@ -220,22 +314,6 @@
     margin:auto;
     justify-content: center;
     flex-direction: column;
-}
-
-footer {
-    color: black;
-    margin-left:14%;
-    background: white;
-    text-align: center;
-    /* position: fixed;  */
-    width: 84.9%; 
-    height:8%;
-    padding-top: 2%;
-    bottom:0;
-    font-size:18px;
-    font-family: "Saira Condensed", sans-serif;
-    font-weight: 600;
-    font-style: normal;
 }
 
 .Contents div {
