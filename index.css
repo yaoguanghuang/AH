@@ -44,7 +44,7 @@ html, body {
     color: transparent;
   }
   
-  .sidebar h1::before {
+.sidebar h1::before {
     content: "A.";
     color: black;
     padding-top: 20px;
@@ -53,17 +53,21 @@ html, body {
     display: block;
   }  
   
-  .sidebar:hover h1::before {
+.sidebar:hover h1::before {
     content: "Auro.";
   }  
 
 .sidebar .Links {
     list-style: none;
-    padding-left: 0px; 
+    padding-left: 0px;
     margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
-.Links li {
+
+.links li {
     width:100%;
     font-family: "Fredoka", sans-serif;
     font-size: 16px;
@@ -77,46 +81,48 @@ html, body {
     font-weight: 400;
 }
 
-.Links li span{
+.links li span{
     font-size: 18px;
 }
 
-.Links li span.fa-solid.fa-fingerprint
+.links li span.fa-solid.fa-fingerprint
 {
     font-size: 22px;
 }
 
-.Links li span.fa-solid.fa-square-envelope {
+.links li span.fa-solid.fa-square-envelope {
     font-size: 22px; 
 }
 
-.Links li span.fa-brands {
+.links li span.fa-brands {
     font-size: 22px; 
 }
 
-.Links li:hover {
+.links li:hover {
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
 
-.Links .footer {         
-    padding-top: 240px; 
+.links .footer {
+    margin-top: auto; 
     color: black;
     font-size: 16px;
     font-weight: 600;
+    padding-bottom: 20px; 
 }
 
-.Links .footer:hover {        
+
+.links .footer:hover {        
     background-color: rgba(255, 255, 255, 0);
     font-size: 16px;
 }
 
-.Links .footer span{
+.links .footer span{
     font-size:20px;
     padding: 5px 0px;
 }
 
-.Links hr {
+.links hr {
     margin-top: 7.5px;
     margin-bottom: 7.5px;
     border: none; 
@@ -126,13 +132,13 @@ html, body {
     border-radius: 1000px;
 }
 
-.Links li span {
+.links li span {
     color: black;
     padding: 12px 5px;
     flex-shrink: 0;
 }
 
-.Links li a {
+.links li a {
     color: black;
     text-decoration: none;
     align-items: center;
@@ -148,12 +154,122 @@ html, body {
     display: block;
 }
 
-.Contents {
-    margin-left: 15%; 
-    width:75%;
+
+.sidework {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 25%; 
+    height: 100vh; 
+    overflow-y: scroll; 
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+
 }
 
-.Contents h1 {
+.sidework::-webkit-scrollbar {
+    display: none; 
+}
+
+.project:hover{
+    width: 320px;
+    height: 180px;
+    padding-bottom: 80px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin-top: 0px;
+}
+
+.project{
+    width: 320px;
+    height: 180px;
+    padding-top: 5px;
+    padding-bottom: 27px;
+    margin-top: 0px;
+    transition:  0.3s ease;
+}
+
+.project img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 5px; 
+}
+
+.project h3{
+    margin-top: 7.5px;
+    text-align: center;
+    font-family: "Fredoka", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.project:hover p{
+    text-align: center;
+    font-family: "Fredoka", sans-serif;
+    font-weight: 400;
+    display: block;
+    font-size: 16px;
+}
+
+.project p{
+    display: none;
+    font-size: 16px;
+}
+
+.project p em{
+    font-style: normal;
+    font-weight: 600;
+}
+
+.sidework hr {
+    border: none;
+    border-top: 1.5px solid #000; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 1000px;
+    width: 320px; 
+}
+
+
+.contents {
+    margin-left: 12.5%; 
+    width:57.5%;
+    overflow: visible;
+    padding-bottom: 20%; 
+}
+
+.contents .fullsample img{
+    margin-top: 3%;
+    width: 100%;
+    border-radius: 5px;
+    height: auto; 
+}
+
+.contents .fullsample p{
+    font-size: 14px;
+    text-align: left;
+    padding-top: 5px;
+    margin-bottom: 1%;
+    font-weight: 400;
+}
+
+.contents .fullsample p a{
+    font-weight: 600;
+    font-style: italic;
+    text-decoration: underline;
+    color: black;
+}
+
+.contents h1 {
     color:rgb(0, 0, 0);
     font-size: 64px;
     text-align: left;
@@ -163,14 +279,15 @@ html, body {
     padding-bottom: 2%;
 }
 
-.Contents p{
-    margin:auto;
+.contents p{
     text-align: left;
     font-family: "Fredoka", sans-serif;
     font-weight: 400;
-    padding-bottom:10px;
     font-size: 16px;
+    padding-bottom: 10px;
 }
 
-
-
+.contents div {
+    display: flex;
+    flex-direction: column; 
+}
