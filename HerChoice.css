@@ -2,16 +2,16 @@
     margin: 0;
     padding: 0;
 }
+
+body{
+    background-color: white;
+}
+
 html, body {
     height: 100%;
     width: 100%;
 }
 
-body{
-    background-color: #ebe2c1;
-}
-
-/*SideBar*/
 .sidebar {
     position: fixed;
     top: 0;
@@ -20,13 +20,14 @@ body{
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start; 
+    align-items: flex-start;
     background-color: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border-right: 1px solid rgba(255, 255, 255, 0.4);
     padding-left: 30px;
     transition: width 0.3s ease;
+    overflow: hidden;
 }
 
 .sidebar:hover {
@@ -43,78 +44,85 @@ body{
     color: transparent;
   }
   
-  .sidebar h1::before {
+.sidebar h1::before {
     content: "A.";
-    color: #5c370e;
+    color:  #5c370e;
     padding-top: 20px;
     padding-bottom: 10px;
     padding-left: 2px;
     display: block;
   }  
   
-  .sidebar:hover h1::before {
+.sidebar:hover h1::before {
     content: "Auro.";
   }  
 
 .sidebar .Links {
     list-style: none;
-    padding-left: 0px; 
+    padding-left: 0px;
     margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
-.Links li {
+
+.links li {
     width:100%;
-    font-weight: 400;
+    font-family: "Fredoka", sans-serif;
     font-size: 16px;
-    color: #5c370e;
+    color:  #5c370e;
     display: flex;
     white-space: nowrap;
     align-items: center;
     padding: 0;
     margin-left: 0; 
     overflow: hidden;
-    font-family: "Fredoka", sans-serif;
+    font-weight: 400;
 }
 
-.Links li span{
+.links li span{
     font-size: 18px;
 }
 
-.Links li span.fa-solid.fa-fingerprint
+.links li span.fa-solid.fa-fingerprint
 {
     font-size: 22px;
 }
 
-.Links li span.fa-solid.fa-square-envelope {
+.links li span.fa-solid.fa-square-envelope {
     font-size: 22px; 
 }
 
-.Links li span.fa-brands {
+.links li span.fa-brands {
     font-size: 22px; 
 }
 
-.Links li:hover {
-    background-color: rgba(255, 255, 255, 0.6);
+.links li:hover {
+    background-color: rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
 
-.Links .footer {         
-    padding-top: 240px; 
+.links .footer {
+    margin-top: auto; 
+    color:  #5c370e;
     font-size: 16px;
     font-weight: 600;
+    padding-bottom: 20px; 
 }
 
-.Links .footer:hover {        
+
+.links .footer:hover {        
     background-color: rgba(255, 255, 255, 0);
     font-size: 16px;
 }
 
-.Links .footer span{
+.links .footer span{
     font-size:20px;
     padding: 5px 0px;
 }
 
-.Links hr {
+.links hr {
     margin-top: 7.5px;
     margin-bottom: 7.5px;
     border: none; 
@@ -124,14 +132,14 @@ body{
     border-radius: 1000px;
 }
 
-.Links li span {
-    color: #5c370e;
+.links li span {
+    color:  #5c370e;
     padding: 12px 5px;
     flex-shrink: 0;
 }
 
-.Links li a {
-    color: #5c370e;
+.links li a {
+    color:  #5c370e;
     text-decoration: none;
     align-items: center;
     padding: 0px 0px 0px 5px;
