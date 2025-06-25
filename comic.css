@@ -1,65 +1,157 @@
-.sidebar{
-    height:100%;
-    width: 15%;
-    position:absolute;
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: white;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.sidebar {
     position: fixed;
-    background-color: black;
-}
-
-.sidebar ul{
-    padding:0;
-}
-
-.sidebar li {
-    display: block;
-    font-size: 20px;
-    color:white;
-    font-family: "Playpen Sans", serif;
-    font-weight: 600;
-    line-height: 1.2;
-    margin-bottom: 12px;
-    margin-left: 25%;
-    margin-right: 25%;
-}
-
-.sidebar li a {
-    display: block;
-    color:white;
-    text-decoration:none;
-}
-
-.sidebar ul li{
-    display: flex;
-    gap: 8px; 
-}
-
-.sidebar li i {
-    font-size: 20px; 
-    color:white;
-}
-
-.sidebar img{
-    width:auto;
-    height:200px;
-    display: block;  
-    margin-left: 15%; 
-}
-
-.sidebarfooter {
-    position: absolute;
-    bottom: 0;
+    top: 0;
     left: 0;
-    right: 0;
+    width: 4%;
+    height: 100%;
     display: flex;
-    justify-content: center;  
-    margin: 10px 0;  
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-right: 1px solid rgba(255, 255, 255, 0.4);
+    padding-left: 30px;
+    transition: width 0.3s ease;
+    overflow: hidden;
 }
 
-.sidebarfooter img{
-    width:auto;
-    height:150px;
-    margin-left:auto;
-    margin-right: auto;
+.sidebar:hover {
+    width: 10%;
+}
+
+.sidebar h1 {
+    font-family: "Fredoka", sans-serif;
+    font-size: 40px;
+    margin: 0;
+    display: block;
+    font-weight: 600;
+    position: relative;
+    color: transparent;
+  }
+  
+.sidebar h1::before {
+    content: "A.";
+    color: black;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 2px;
+    display: block;
+  }  
+  
+.sidebar:hover h1::before {
+    content: "Auro.";
+  }  
+
+.sidebar .Links {
+    list-style: none;
+    padding-left: 0px;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+.links li {
+    width:100%;
+    font-family: "Fredoka", sans-serif;
+    font-size: 16px;
+    color: black;
+    display: flex;
+    white-space: nowrap;
+    align-items: center;
+    padding: 0;
+    margin-left: 0; 
+    overflow: hidden;
+    font-weight: 400;
+}
+
+.links li span{
+    font-size: 18px;
+}
+
+.links li span.fa-solid.fa-fingerprint
+{
+    font-size: 22px;
+}
+
+.links li span.fa-solid.fa-square-envelope {
+    font-size: 22px; 
+}
+
+.links li span.fa-brands {
+    font-size: 22px; 
+}
+
+.links li:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.links .footer {
+    margin-top: auto; 
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 20px; 
+}
+
+
+.links .footer:hover {        
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 16px;
+}
+
+.links .footer span{
+    font-size:20px;
+    padding: 5px 0px;
+}
+
+.links hr {
+    margin-top: 7.5px;
+    margin-bottom: 7.5px;
+    border: none; 
+    background-color: black; 
+    height: 1.5px; 
+    display: block; 
+    border-radius: 1000px;
+}
+
+.links li span {
+    color: black;
+    padding: 12px 5px;
+    flex-shrink: 0;
+}
+
+.links li a {
+    color: black;
+    text-decoration: none;
+    align-items: center;
+    padding: 0px 0px 0px 5px;
+    display: none;
+}
+
+.sidebar:hover .Links li {
+    width: 120px;
+}
+
+.sidebar:hover .Links li a {
+    display: block;
 }
 
 .Contents {
