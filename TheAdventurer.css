@@ -265,46 +265,74 @@ html, body {
     padding-bottom: 20%; 
 }
 
-.contents .fullsample iframe {
-    margin-top: 25px;
+.contents .fullsample video {
+    margin-top: 20px;
     width: 100%;
     aspect-ratio: 16 / 9;
+    border-radius: 3px;
     border: none;
-    border-radius: 5px;
-    pointer-events: none; /* disables hover & click interaction */
+    display: block;
+    object-fit: cover; 
 }
 
 .contents .fullsample p{
     font-size: 14px;
     text-align: left;
     padding-top: 5px;
-    margin-bottom: 1%;
+    margin-bottom: 0px;
     font-weight: 400;
+}
+
+.Contents .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 170px; 
+    padding-top: 20px;
+}
+
+.Contents .logo img {
+    max-height: 170px; 
+    height: auto;      
+    width: auto;        
+}
+
+.Contents .H1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 125px; 
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+.Contents .H1 img {
+    max-height: 125px; 
+    height: auto;      
+    width: auto;        
 }
 
 .contents .fullsample p a{
     font-weight: 600;
     font-style: italic;
     text-decoration: underline;
-    color: black;
+    color: #8e2828;
 }
+
+.contents .fullsample p a:hover{
+    font-weight: 600;
+    font-style: italic;
+    text-decoration: underline;
+    color: #602321;
+}
+
 
 .contents h2{
     color:rgb(0, 0, 0);
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
     font-weight: 600;
-    font-family: "Fredoka", sans-serif;
-    padding-top: 4%;
-    padding-bottom: 2%;
-}
-
-.contents h3{
-    color:rgb(0, 0, 0);
-    font-size: 24px;
-    text-align: center;
-    font-weight: 600;
-    font-family: "Fredoka", sans-serif;
+    font-family: "Fontdiner Swanky", serif;
 }
 
 .contents p{
