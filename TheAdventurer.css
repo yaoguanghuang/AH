@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #ceb784;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 4%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #ceb784;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    /* border-right: 1px solid rgba(255, 255, 255, 0.4); */
+    padding-left: 30px;
+    transition: width 0.3s ease;
+    overflow: hidden;
+}
+
+.sidebar:hover {
+    width: 10%;
+}
+
+.sidebar h1 {
+    font-family: "Fredoka", sans-serif;
+    font-size: 40px;
+    margin: 0;
+    display: block;
+    font-weight: 600;
+    position: relative;
+    color: transparent;
+  }
+  
+.sidebar h1::before {
+    content: "A.";
+    color: black;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 2px;
+    display: block;
+  }  
+  
+.sidebar:hover h1::before {
+    content: "Auro.";
+  }  
+
+.sidebar .Links {
+    list-style: none;
+    padding-left: 0px;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+.links li {
+    width:100%;
+    font-family: "Fredoka", sans-serif;
+    font-size: 16px;
+    color: black;
+    display: flex;
+    white-space: nowrap;
+    align-items: center;
+    padding: 0;
+    margin-left: 0; 
+    overflow: hidden;
+    font-weight: 400;
+}
+
+.links li span{
+    font-size: 18px;
+}
+
+.links li span.fa-solid.fa-fingerprint
+{
+    font-size: 22px;
+}
+
+.links li span.fa-solid.fa-square-envelope {
+    font-size: 22px; 
+}
+
+.links li span.fa-brands {
+    font-size: 22px; 
+}
+
+.links li:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.links .footer {
+    margin-top: auto; 
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 20px; 
+}
+
+
+.links .footer:hover {        
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 16px;
+}
+
+.links .footer span{
+    font-size:20px;
+    padding: 5px 0px;
+}
+
+.links hr {
+    margin-top: 7.5px;
+    margin-bottom: 7.5px;
+    border: none; 
+    background-color: black; 
+    height: 1.5px; 
+    display: block; 
+    border-radius: 1000px;
+}
+
+.links li span {
+    color: black;
+    padding: 12px 5px;
+    flex-shrink: 0;
+}
+
+.links li a {
+    color: black;
+    text-decoration: none;
+    align-items: center;
+    padding: 0px 0px 0px 5px;
+    display: none;
+}
+
+.sidebar:hover .Links li {
+    width: 120px;
+}
+
+.sidebar:hover .Links li a {
+    display: block;
+}
+
+
+.sidework {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 25%; 
+    height: 100vh; 
+    overflow-y: scroll; 
+    padding: 20px;
+    background-color: #ceb784;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+
+}
+
+.sidework::-webkit-scrollbar {
+    display: none; 
+}
+
+.Trailer
+{
+    width: 320px;
+    height: 180px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-top: 0px;
+}
+
+.Trailer iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 5px
+}
+
+.Trailer h3{
+    margin-top: 7.5px;
+    text-align: center;
+    font-family: "Fredoka", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.Trailer a h3{
+    color: #8e2828;                   
+    text-decoration: underline;  
+    text-decoration-color: #8e2828;   
+}
+
+.Trailer a h3:hover{
+    color: #602321;                   
+    text-decoration: underline;  
+    text-decoration-color: #602321;   
+}
+
+.Itch{
+    width: 320px;
+    height: 180px;
+    padding-top: 5px;
+    padding-bottom: 25px;
+    margin-top: 0px;
+}
+
+.Itch img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 5px; 
+}
+
+.Itch h3{
+    margin-top: 7.5px;
+    text-align: center;
+    font-family: "Fredoka", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.Itch a h3{
+    color: #8e2828;                   
+    text-decoration: underline;  
+    text-decoration-color: #8e2828;   
+}
+
+.Itch a h3:hover{
+    color: #602321;                   
+    text-decoration: underline;  
+    text-decoration-color: #602321;   
+}
+
+.sidework hr {
+    border: none;
+    border-top: 1.5px solid #000; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 1000px;
+    width: 320px; 
+}
+
+
+.contents {
+    margin-left: 12.5%; 
+    width:57.5%;
+    overflow: visible;
+    padding-bottom: 20%; 
+}
+
+.contents .fullsample iframe {
+    margin-top: 25px;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: none;
+    border-radius: 5px;
+    pointer-events: none; /* disables hover & click interaction */
+}
+
+.contents .fullsample p{
+    font-size: 14px;
+    text-align: left;
+    padding-top: 5px;
+    margin-bottom: 1%;
+    font-weight: 400;
+}
+
+.contents .fullsample p a{
+    font-weight: 600;
+    font-style: italic;
+    text-decoration: underline;
+    color: black;
+}
+
+.contents h2{
+    color:rgb(0, 0, 0);
+    font-size: 40px;
+    text-align: center;
+    font-weight: 600;
+    font-family: "Fredoka", sans-serif;
+    padding-top: 4%;
+    padding-bottom: 2%;
+}
+
+.contents h3{
+    color:rgb(0, 0, 0);
+    font-size: 24px;
+    text-align: center;
+    font-weight: 600;
+    font-family: "Fredoka", sans-serif;
+}
+
+.contents p{
+    text-align: left;
+    font-family: "Fredoka", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+
+.contents div {
+    display: flex;
+    flex-direction: column; 
+}
