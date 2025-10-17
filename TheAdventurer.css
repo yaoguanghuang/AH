@@ -7,6 +7,17 @@ body{
     background-color: #ceb784;
 }
 
+::-webkit-scrollbar {
+    width: 12px;              
+    background-color: #b99b67; 
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #00000050; 
+    border-radius: 6px;
+    border: 3px solid #b99b67;
+}
+
 html, body {
     height: 100%;
     width: 100%;
@@ -85,8 +96,7 @@ html, body {
     font-size: 18px;
 }
 
-.links li span.fa-solid.fa-fingerprint
-{
+.links li span.fa-solid.fa-fingerprint{
     font-size: 22px;
 }
 
@@ -212,12 +222,13 @@ html, body {
     text-decoration-color: #602321;   
 }
 
-.Itch{
+.Itch {
     width: 320px;
     height: 180px;
     padding-top: 5px;
     padding-bottom: 25px;
     margin-top: 0px;
+    position: relative; 
 }
 
 .Itch img {
@@ -227,7 +238,47 @@ html, body {
     border-radius: 5px; 
 }
 
-.Itch h3{
+.Itch .logo-link {
+    position: absolute;
+    top: 37.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120px;
+    height: auto;
+    display: block;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    box-shadow: none;   
+}
+
+.Itch .logo-link img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    transition: opacity 0.02s ease;
+    display: block;
+    pointer-events: auto; 
+}
+
+
+.Itch .logo-link .itch-hover {
+    opacity: 0;
+}
+
+
+.Itch .logo-link:hover .itch-hover {
+    opacity: 1;
+}
+
+.Itch .logo-link:hover .itch-normal {
+    opacity: 0;
+}
+
+.Itch h3 {
     margin-top: 7.5px;
     text-align: center;
     font-family: "Fredoka", sans-serif;
@@ -236,16 +287,23 @@ html, body {
     font-style: italic;
 }
 
-.Itch a h3{
-    color: #8e2828;                   
+.Itch a h3 {
+    color: #114722;                   
     text-decoration: underline;  
-    text-decoration-color: #8e2828;   
+    text-decoration-color: #114722;
 }
 
-.Itch a h3:hover{
-    color: #602321;                   
+.Itch a h3:hover {
+    color: #1e3328;             
     text-decoration: underline;  
-    text-decoration-color: #602321;   
+    text-decoration-color: #1e3328;
+}
+
+
+.Itch a h3:hover{
+    color: #1e3328;             
+    text-decoration: underline;  
+    text-decoration-color: #1e3328;
 }
 
 .sidework hr {
@@ -265,7 +323,7 @@ html, body {
     padding-bottom: 20%; 
 }
 
-.contents .fullsample video {
+.contents .Fullsample video {
     margin-top: 20px;
     width: 100%;
     aspect-ratio: 16 / 9;
@@ -275,7 +333,7 @@ html, body {
     object-fit: cover; 
 }
 
-.contents .fullsample p{
+.contents .Fullsample p{
     font-size: 14px;
     text-align: left;
     padding-top: 5px;
@@ -307,32 +365,49 @@ html, body {
 }
 
 .Contents .H1 img {
-    max-height: 125px; 
+    max-height: 125px;
+    padding-bottom: 5px; 
     height: auto;      
     width: auto;        
 }
 
-.contents .fullsample p a{
-    font-weight: 600;
+.contents .Fullsample p a{
+    font-weight:800;
     font-style: italic;
     text-decoration: underline;
     color: #8e2828;
 }
 
-.contents .fullsample p a:hover{
-    font-weight: 600;
+.contents .Fullsample p a:hover{
     font-style: italic;
     text-decoration: underline;
     color: #602321;
 }
 
+.Contents .Fullsample .OneThirdSample {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    padding-bottom: 0px;
+}
+
+.Contents .Fullsample .OneThirdSample img {
+    width: 33%;
+    height: auto;
+    object-fit: cover;
+}
+
 
 .contents h2{
     color:rgb(0, 0, 0);
-    font-size: 30px;
-    text-align: center;
+    font-size: 32px;
+    text-align: left;
     font-weight: 600;
     font-family: "Fontdiner Swanky", serif;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 .contents p{
@@ -346,4 +421,20 @@ html, body {
 .contents div {
     display: flex;
     flex-direction: column; 
+}
+
+em u {
+  font-style: italic;
+  text-decoration: underline;
+  font-weight:600;
+  transition: 0.2s ease;
+  color: #114722;
+}
+
+em:hover u {
+  color:#1e3328;
+}
+
+.Contents .Section{
+    padding-bottom: 90px;
 }
