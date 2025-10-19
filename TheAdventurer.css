@@ -315,23 +315,6 @@ html, body {
     text-decoration-color: #1e3328;
 }
 
-
-.Itch a h3:hover{
-    color: #1e3328;             
-    text-decoration: underline;  
-    text-decoration-color: #1e3328;
-}
-
-.sidework hr {
-    border: none;
-    border-top: 1.5px solid #000; 
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border-radius: 1000px;
-    width: 320px; 
-}
-
-
 .contents {
     margin-left: 12.5%; 
     width:57.5%;
@@ -343,7 +326,7 @@ html, body {
     margin-top: 20px;
     width: 100%;
     aspect-ratio: 16 / 9;
-    border-radius: 3px;
+    border-radius: 1.5px;
     border: none;
     display: block;
     object-fit: cover; 
@@ -355,9 +338,10 @@ html, body {
     padding-top: 5px;
     margin-bottom: 0px;
     font-weight: 400;
+    border-radius: 1.5px;
 }
 
-.Contents .logo {
+.contents .logo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -365,13 +349,13 @@ html, body {
     padding-top: 20px;
 }
 
-.Contents .logo img {
+.contents .logo img {
     max-height: 170px; 
     height: auto;      
     width: auto;        
 }
 
-.Contents .H1 {
+.contents .H1 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -380,7 +364,7 @@ html, body {
     padding-bottom: 15px;
 }
 
-.Contents .H1 img {
+.contents .H1 img {
     max-height: 125px;
     padding-bottom: 5px; 
     height: auto;      
@@ -455,6 +439,129 @@ em:hover u {
     padding-bottom: 90px;
 }
 
+.gallerysample {
+    display: flex;
+    flex-direction: column;
+}
+
+.gallerysample .HoverImage {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    width: 100%;
+}
+
+.gallerysample .HoverImage img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    transition: opacity 0.5s ease;
+}
+
+.gallerysample .HoverImage .hover {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.gallerysample .HoverImage:hover .hover {
+    opacity: 1;
+}
+
+.gallerysample .galleryitem {
+    display: none;       
+    max-height: 500px; 
+    border-radius: 1.5px;
+    overflow: auto;    
+    position: relative;
+}
+
+.gallerysample .galleryitem img {
+    width: 100%;         
+    height: auto;  
+    display: block;
+    object-fit: contain;
+}
+
+
+
+.gallerysample .thumbnails {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 5px;
+    margin-top: 5px;
+    flex-wrap: wrap;
+}
+
+.gallerysample .thumbnails .thumb {
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border 0.3s;
+}
+
+.gallerysample .thumbnails .thumb.active {
+    border-color: black; 
+    position: relative; 
+}
+
+.gallerysample .thumbnails .thumb.active::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3); 
+    pointer-events: none;
+}
+
+
+.gallerysample .thumbnails .thumb img {
+    width: auto;
+    height: 91.5px;
+    display: block;
+}
+
+.contents .gallerysample p{
+    font-size: 14px;
+    text-align: left;
+    padding-top: 5px;
+    margin-bottom: 0px;
+    font-weight: 400;
+}
+
+.contents .gallerysample p a{
+    font-weight:800;
+    font-style: italic;
+    text-decoration: underline;
+    color: #8e2828;
+}
+
+.contents .gallerysample p a:hover{
+    font-style: italic;
+    text-decoration: underline;
+    color: #602321;
+}
+
+.fullsample .Characters {
+  display: inline-block;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  width: 100%;
+  height: auto;
+  background-color: #b99b67; 
+}
+
+.fullsample .Characters img {
+  height: 500px;
+  width: auto;
+  display: inline-block;
+}
+
 .fullsample .HoverImage {
     position: relative;
     display: inline-block;
@@ -480,21 +587,6 @@ em:hover u {
     opacity: 1;
 }
 
-.fullsample .Characters {
-  display: inline-block;
-  overflow-x: auto;
-  overflow-y: hidden;
-  white-space: nowrap;
-  width: 100%;
-  height: auto;
-  background-color: #b99b67; 
-}
-
-.fullsample .Characters img {
-  height: 600px;
-  width: auto;
-  display: inline-block;
-}
 
 
 

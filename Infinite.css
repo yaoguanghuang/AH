@@ -1,0 +1,357 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: white;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 4%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-right: 1px solid rgba(255, 255, 255, 0.4);
+    padding-left: 30px;
+    transition: width 0.3s ease;
+    overflow: hidden;
+}
+
+.sidebar:hover {
+    width: 10%;
+}
+
+.sidebar h1 {
+    font-family: "Fredoka", sans-serif;
+    font-size: 40px;
+    margin: 0;
+    display: block;
+    font-weight: 600;
+    position: relative;
+    color: transparent;
+  }
+  
+.sidebar h1::before {
+    content: "A.";
+    color: black;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 2px;
+    display: block;
+  }  
+  
+.sidebar:hover h1::before {
+    content: "Auro.";
+  }  
+
+.sidebar .Links {
+    list-style: none;
+    padding-left: 0px;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+.links li {
+    width:100%;
+    font-family: "Fredoka", sans-serif;
+    font-size: 16px;
+    color: black;
+    display: flex;
+    white-space: nowrap;
+    align-items: center;
+    padding: 0;
+    margin-left: 0; 
+    overflow: hidden;
+    font-weight: 400;
+}
+
+.links li span{
+    font-size: 18px;
+}
+
+.links li span.fa-solid.fa-fingerprint
+{
+    font-size: 22px;
+}
+
+.links li span.fa-solid.fa-square-envelope {
+    font-size: 22px; 
+}
+
+.links li span.fa-brands {
+    font-size: 22px; 
+}
+
+.links li:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.links .footer {
+    margin-top: auto; 
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 20px; 
+}
+
+
+.links .footer:hover {        
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 16px;
+}
+
+.links .footer span{
+    font-size:20px;
+    padding: 5px 0px;
+}
+
+.links hr {
+    margin-top: 7.5px;
+    margin-bottom: 7.5px;
+    border: none; 
+    background-color: black; 
+    height: 1.5px; 
+    display: block; 
+    border-radius: 1000px;
+}
+
+.links li span {
+    color: black;
+    padding: 12px 5px;
+    flex-shrink: 0;
+}
+
+.links li a {
+    color: black;
+    text-decoration: none;
+    align-items: center;
+    padding: 0px 0px 0px 5px;
+    display: none;
+}
+
+.sidebar:hover .Links li {
+    width: 120px;
+}
+
+.sidebar:hover .Links li a {
+    display: block;
+}
+
+
+.sidework {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 25%; 
+    height: 100vh; 
+    overflow-y: scroll; 
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+
+}
+
+.sidework::-webkit-scrollbar {
+    display: none; 
+}
+
+.Trailer
+{
+    width: 320px;
+    height: 180px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-top: 0px;
+}
+
+.Trailer iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 5px
+}
+
+.Trailer h3{
+    margin-top: 7.5px;
+    text-align: center;
+    font-family: "Fredoka", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.Trailer a h3{
+    color: black;                   
+    text-decoration: underline;  
+    text-decoration-color: black;   
+}
+
+.Trailer a h3:hover{
+    color: purple;                   
+    text-decoration: underline;  
+    text-decoration-color: purple;   
+}
+
+.Itch {
+    width: 320px;
+    height: 180px;
+    padding-top: 5px;
+    padding-bottom: 25px;
+    margin-top: 0px;
+    position: relative; 
+}
+
+.Itch img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 5px; 
+}
+
+.Itch .logo-link {
+    position: absolute;
+    top: 37.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120px;
+    height: auto;
+    display: block;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    box-shadow: none;   
+}
+
+.Itch .logo-link img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    transition: opacity 0.02s ease;
+    display: block;
+    pointer-events: auto; 
+}
+
+
+.Itch .logo-link .itch-hover {
+    opacity: 0;
+}
+
+
+.Itch .logo-link:hover .itch-hover {
+    opacity: 1;
+}
+
+.Itch .logo-link:hover .itch-normal {
+    opacity: 0;
+}
+
+.Itch h3 {
+    margin-top: 7.5px;
+    text-align: center;
+    font-family: "Fredoka", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.Itch a h3 {
+    color: black;                   
+    text-decoration: underline;  
+    text-decoration-color: black;
+}
+
+.Itch a h3:hover {
+    color: purple;             
+    text-decoration: underline;  
+    text-decoration-color: purple;
+}
+
+.contents {
+    margin-left: 12.5%; 
+    width:57.5%;
+    overflow: visible;
+    padding-bottom: 20%; 
+}
+
+.contents .fullsample img{
+    margin-top: 3%;
+    width: 100%;
+    border-radius: 5px;
+    height: auto; 
+}
+
+.contents .fullsample p{
+    font-size: 14px;
+    text-align: left;
+    padding-top: 5px;
+    margin-bottom: 1%;
+    font-weight: 400;
+}
+
+.contents .fullsample p a{
+    font-weight: 600;
+    font-style: italic;
+    text-decoration: underline;
+    color: black;
+}
+
+.contents h1 {
+    color:rgb(0, 0, 0);
+    font-size: 64px;
+    text-align: left;
+    font-weight: 600;
+    font-family: "Fredoka", sans-serif;
+    padding-top: 4%;
+    padding-bottom: 2%;
+}
+
+.contents p{
+    text-align: left;
+    font-family: "Fredoka", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+
+.contents .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 170px; 
+    padding-top: 20px;
+}
+
+.contents .logo img {
+    max-height: 170px; 
+    height: auto;      
+    width: auto;        
+}
+
+.contents div {
+    display: flex;
+    flex-direction: column; 
+}
