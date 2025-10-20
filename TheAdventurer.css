@@ -359,13 +359,12 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 125px; 
-    padding-top: 20px;
-    padding-bottom: 15px;
+    height: 175px; 
+    padding-top: 10px;
 }
 
 .contents .H1 img {
-    max-height: 125px;
+    max-height: 175px;
     padding-bottom: 5px; 
     height: auto;      
     width: auto;        
@@ -401,13 +400,19 @@ html, body {
 
 
 .contents h2{
-    color:rgb(0, 0, 0);
-    font-size: 32px;
+    color:black;
+    font-size: 40px;
     text-align: left;
     font-weight: 600;
     font-family: "Fontdiner Swanky", serif;
     padding-bottom: 10px;
-    padding-top: 10px;
+}
+
+.contents h3{
+    color:black;
+    font-size: 32px;
+    text-align: center;
+    font-family: "Fontdiner Swanky", serif;
 }
 
 .contents p{
@@ -436,7 +441,7 @@ em:hover u {
 }
 
 .Contents .Section{
-    padding-bottom: 90px;
+    padding-bottom: 100px;
 }
 
 .gallerysample {
@@ -456,7 +461,7 @@ em:hover u {
     height: auto;
     display: block;
     object-fit: contain;
-    transition: opacity 0.5s ease;
+    transition: opacity 0.25s ease;
 }
 
 .gallerysample .HoverImage .hover {
@@ -476,6 +481,7 @@ em:hover u {
     border-radius: 1.5px;
     overflow: auto;    
     position: relative;
+    background-color: #b99b67;
 }
 
 .gallerysample .galleryitem img {
@@ -485,25 +491,29 @@ em:hover u {
     object-fit: contain;
 }
 
-
 .gallerysample .thumbnails {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     gap: 5px;
-    margin-top: 5px;
-    flex-wrap: wrap;
+    margin-top: 10px;
+    flex-wrap: wrap; 
+    width: 100%;
+    overflow: hidden;
 }
 
 .gallerysample .thumbnails .thumb {
+    flex: 0 0 calc((100% - 4 * 5px) / 5); 
     cursor: pointer;
-    border: 2px solid transparent;
+    border: 3px solid transparent;
     transition: border 0.3s;
+    border-radius: 1.5px;
+    box-sizing: border-box;
 }
 
 .gallerysample .thumbnails .thumb.active {
-    border-color: black; 
-    position: relative; 
+    border-color: black;
+    position: relative;
 }
 
 .gallerysample .thumbnails .thumb.active::after {
@@ -513,15 +523,15 @@ em:hover u {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.3); 
+    background-color: rgba(0,0,0,0.3);
     pointer-events: none;
 }
 
-
 .gallerysample .thumbnails .thumb img {
-    width: auto;
-    height: 91.5px;
+    width: 100%;
+    height: auto;
     display: block;
+    object-fit: contain;
 }
 
 .contents .gallerysample p{
