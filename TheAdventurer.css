@@ -136,7 +136,6 @@ html, body {
     padding-bottom: 20px; 
 }
 
-
 .links .footer:hover {        
     background-color: rgba(255, 255, 255, 0);
     font-size: 16px;
@@ -186,22 +185,52 @@ html, body {
     right: 0;
     width: 25%; 
     height: 100vh; 
-    overflow-y: scroll; 
-    padding: 20px;
-    background-color: #ceb784;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    -ms-overflow-style: none; 
-    scrollbar-width: none; 
+}
 
+.JumpTo {
+    width: 320px;
+    margin-top: auto; 
+    margin-bottom: 25px; 
+    text-align: right;
+}
+
+.JumpTo h3 {
+    margin-bottom: 5px; 
+}
+
+.JumpTo h3 a{
+    font-family: "Typwrng";
+    font-weight: 600;
+    font-size: 16px;
+    color:#8e2828
+}
+
+.JumpTo h3 a:hover{
+    color:#602321;
+}
+
+.sidework p{
+    margin-bottom: 5px;
+}
+
+.sidework p a{
+    font-family: "Typwrng";
+    font-weight: 500;
+    font-size: 14px;
+    color:#1e3328;
+}
+
+.sidework p a:hover{
+    color:#114722;
 }
 
 .sidework::-webkit-scrollbar {
     display: none; 
 }
 
-.Trailer
+.Walkthrough
 {
     width: 320px;
     height: 180px;
@@ -210,14 +239,14 @@ html, body {
     margin-top: 0px;
 }
 
-.Trailer iframe{
+.Walkthrough iframe{
     width: 100%;
     height: 100%;
     border: none;
     border-radius: 5px
 }
 
-.Trailer h3{
+.Walkthrough h3{
     margin-top: 7.5px;
     text-align: center;
     font-family: "Fredoka", sans-serif;
@@ -226,13 +255,13 @@ html, body {
     font-style: italic;
 }
 
-.Trailer a h3{
+.Walkthrough a h3{
     color: #8e2828;                   
     text-decoration: underline;  
     text-decoration-color: #8e2828;   
 }
 
-.Trailer a h3:hover{
+.Walkthrough a h3:hover{
     color: #602321;                   
     text-decoration: underline;  
     text-decoration-color: #602321;   
@@ -241,7 +270,7 @@ html, body {
 .Itch {
     width: 320px;
     height: 180px;
-    padding-top: 5px;
+    padding-top: 25px;
     padding-bottom: 25px;
     margin-top: 0px;
     position: relative; 
@@ -347,6 +376,7 @@ html, body {
     align-items: center;
     height: 170px; 
     padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .contents .logo img {
@@ -454,7 +484,7 @@ html, body {
     flex-direction: column; 
 }
 
-em u {
+em {
   font-style: italic;
   text-decoration: underline;
   font-weight:600;
@@ -462,7 +492,7 @@ em u {
   color: #114722;
 }
 
-em:hover u {
+em:hover {
   color:#1e3328;
 }
 

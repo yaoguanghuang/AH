@@ -44,9 +44,7 @@
                         Studio
                     </a>
                     </li>
-
                     <hr>
-                    
                     <li>
                         <span class="fa-brands fa-itch-io"></span>
                         <a href = "studio.html">
@@ -71,7 +69,6 @@
                         Email
                     </a>
                     </li>
-                    
                     <li class = "footer">
                     <span class="fa-solid fa-at"></span>
                     <a>2024-2025</a>
@@ -92,35 +89,47 @@
             </a>
 
             <a href="https://ah-0811.itch.io/the-adventurer">
-            <h3>Available to play at Itch.io</h3>
+            <h3>Available to Play at Itch.io</h3>
             </a>
         </div>
-
-        <div class="Trailer">
+        <div class="Walkthrough">
             <iframe 
                  src="https://www.youtube.com/embed/a9_lmDCe-Qs?rel=0&v=1" 
             frameborder="0" 
                 allowfullscreen>
             </iframe>
             <a href = "https://www.youtube.com/embed/a9_lmDCe-Qs">
-            <h3>Game Walkthrough available to watch</h3>
+            <h3>Walkthrough Available to Watch</h3>
             </a>
+        </div>
+        <div class = "JumpTo">
+        <h3><a href="#Home">HOME</a></h3>
+        <h3><a href="#Vision">VISION</a></h3>
+        <p><a href="#Motive">Motive</a></p>
+        <p><a href="#Inspiration">Inspiration</a></p>
+        <p><a href="#Aesthetic">Aesthetic</a></p>
+        <h3><a href="#Design">DESIGN</a></h3>
+        <p><a href="#System">System</a></p>
+        <p><a href="#Scene">Scene</a></p>
+        <p><a href="#Character">Character</a></p>
+        <p><a href="#Ending">Ending</a></p>
+        <h3><a href="#Play">PLAY</a></h3>
+        <p><a href="#Vision">Walkthrough</a></p>
+        <p><a href="#Vision">Platform</a></p>
         </div>
     </div>
 
 <div class="Contents">
-
-    <div class="logo">
-        <img src="TheAdventurer/Logo.png">
+    <div class="logo" id="Home">
+    <img src="TheAdventurer/Logo.png">
     </div>
     <div class = "fullsample">
-        <video src="TheAdventurer/00.mp4" 
-            autoplay 
-            loop 
-            playsinline
-        ></video>
+        <div class="HoverImage">
+            <img src = "TheAdventurer/00.png " class="normal">
+            <img src = "TheAdventurer/00.mp4 " class="hover">
+        </div>
         <p>
-            Record of <em><u>Home Scene</u></em>. Embeded and illustrated in <a>May 2025</a>.
+            Screenshot of <em><u>Home Scene</u></em>. Embeded and illustrated in <a>May 2025</a>.
         </p>
     </div>
     <p>
@@ -129,17 +138,17 @@
 
     <div style="height:200px;"></div>
 
-    <div class="H1">
+    <div class="H1" id="Vision">
         <img src="TheAdventurer/H1Vision.png">
     </div>
-    <h2>Motive</h2>
+    <h2 id = "Motive">Motive</h2>
     <p>
         Despite our society stopping ignoring mental health, most social institutes—such as campuses and communities—treat patients with psychological disorders as troubles and burdens. Instead of providing actual help, what is usually being implied is the strategy only to prevent them from self-injured or suicide at any cost, specifically and only under their supervision. This non-human-oriented attitude only brings fear of expressing or over-supervising without privacy. In The Adventurer, the player will serve as a supervisor who tries to keep 3 NPCs with different psychological disorders able-bodied and alive. Through experience and involvement in executing the supervision, I hope players could eventually understand how this system is broken, and how much unequal power the supervisor has over patients in need.
     </p>
 
     <div style="height:75px;"></div>
 
-    <h2>Inspiration</h2>
+    <h2 id = "Inspiration">Inspiration</h2>
         <div class = "fullsample">
             <div class = "OneThirdSample">
                 <img src = "TheAdventurer/GReference0.jpg">
@@ -153,10 +162,10 @@
             </div>
             <p>
                 Screenshot from 
-                <a href="https://store.steampowered.com/app/3180070/No_Im_not_a_Human/" target="_blank"><em><u>No, I’m not a Human</u></em></a>, 
-                <a href="https://store.steampowered.com/app/239030/Papers_Please/" target="_blank"><em><u>Papers, Please</u></em></a>, 
-                <a href="https://store.steampowered.com/app/3431040/Thats_not_my_Neighbor/" target="_blank"><em><u>That’s not my Neighbor</u></em></a>, 
-                and <a href="https://store.steampowered.com/app/368360/60_Seconds/" target="_blank"><em><u>60 Seconds</u></em></a>, 
+                <a href="https://store.steampowered.com/app/3180070/No_Im_not_a_Human/" target="_blank"><em>No, I’m not a Human</em></a>, 
+                <a href="https://store.steampowered.com/app/239030/Papers_Please/" target="_blank"><em>Papers, Please</em></a>, 
+                <a href="https://store.steampowered.com/app/3431040/Thats_not_my_Neighbor/" target="_blank"><em>That’s not my Neighbor</em></a>, 
+                and <a href="https://store.steampowered.com/app/368360/60_Seconds/" target="_blank"><em>60 Seconds</em></a>, 
                 on <a href="https://store.steampowered.com" target="_blank">Steam</a>.
             </p>
         </div>
@@ -166,7 +175,7 @@
 
     <div style="height:75px;"></div>
 
-    <h2>Aesthetic</h2>
+    <h2 id = "Aesthetic">Aesthetic</h2>
         <div class = "fullsample">
             <div class = "OneThirdSample">
                 <img src = "TheAdventurer/AReference1.jpg">
@@ -180,12 +189,12 @@
             </div>
             <p>
                 Screenshot from 
-                <a href="https://store.steampowered.com/app/3180070/No_Im_not_a_Human/" target="_blank"><em><u>Potion Craft: Alchemist Simulator</u></em></a> 
-                and <a href="https://store.steampowered.com/app/239030/Papers_Please/" target="_blank"><em><u>The White Door</u></em></a>, 
+                <a href="https://store.steampowered.com/app/3180070/No_Im_not_a_Human/" target="_blank"><em>Potion Craft: Alchemist Simulator</em></a> 
+                and <a href="https://store.steampowered.com/app/239030/Papers_Please/" target="_blank"><em>The White Door</em></a>, 
                 on <a href="https://store.steampowered.com" target="_blank">Steam</a>.
                 Art from illustrators
-                <a href="https://www.instagram.com/where_hao/?hl=en" target="_blank"><em><u>Where_Hao</u></em></a>
-                and <a href="https://www.instagram.com/tokio_hello/?hl=en" target="_blank"><em><u>Tokio Hello</u></em></a> on <a href="https://www.instagram.com/?hl=en" target="_blank">Instagram</a>.
+                <a href="https://www.instagram.com/where_hao/?hl=en" target="_blank"><em>Where_Hao</em></a>
+                and <a href="https://www.instagram.com/tokio_hello/?hl=en" target="_blank"><em>Tokio Hello</em></a> on <a href="https://www.instagram.com/?hl=en" target="_blank">Instagram</a>.
             </p>
         </div>
     <p>
@@ -195,10 +204,10 @@
 
     <div style="height:200px;"></div>
     
-    <div class="H1">
+    <div class="H1" id = "Design">
         <img src="TheAdventurer/H1Design.png">
     </div>
-    <H2>System</H2>
+    <H2 id = "System">System</H2>
     <p>
         As the Captain of The Adventurer, the player’s daily agenda includes distributing food to passengers, prescribing them medications, making important decisions for them, and of course, checking in with them daily to always supervise their conditions to prevent them from self-injured or suicide. The standard game flow is listed below:
     </p>
@@ -235,8 +244,8 @@
             <div class="thumb"><img src="TheAdventurer/Playtest2.00.png"></div>
         </div>
         <p>
-            (P1-P2) <em><u>Game Flow System Design</u></em>. Designed in <a>Octorber 2024</a>.
-            (P3-6) <em><u>Playtest Draft</u></em>. Playtested in <a>September 2024</a>.
+            (P1-P2) <em>Game Flow System Design</em>. Designed in <a>Octorber 2024</a>.
+            (P3-6) <em>Playtest Draft</em>. Playtested in <a>September 2024</a>.
         </p>
     </div>
 
@@ -288,14 +297,14 @@
             <div class="thumb"><img src="TheAdventurer/17.png"></div>
         </div>         
         <p>
-            (P1-10) Screenshots of Day2 <em><u> Whole-Day TimeSlot</u></em> in sequence.
+            (P1-10) Screenshots of Day2 <em>Whole-Day TimeSlot</em> in sequence.
             Embeded in <a>April 2025</a>.
         </p>
     </div>
 
     <div style="height:200px;"></div>
             
-    <h2>Scene</h2>        
+    <h2 id = "Scene">Scene</h2>        
     <div class="gallerysample">
         <div class="HoverImage">
             <div class="galleryitem">
@@ -327,9 +336,9 @@
             <div class="thumb"><img src="TheAdventurer/Draft0.png"></div>
         </div>
         <p>
-            (P1) Screenshot of <em><u>Map</u></em>. Embeded in <a>April 2025</a>. 
-            (P2-4) <em><u>Scene Design</u></em>. Designed and illustrated in <a>January 2025</a>.
-            (P5) <em><u>First Scene Draft</u></em>. Designed and illustrated in <a>Octorber 2024</a>.  
+            (P1) Screenshot of <em>Map</em>. Embeded in <a>April 2025</a>. 
+            (P2-4) <em>Scene Design</em>. Designed and illustrated in <a>January 2025</a>.
+            (P5) <em>First Scene Draft</em>. Designed and illustrated in <a>Octorber 2024</a>.  
         </p>
     </div>
 
@@ -361,8 +370,8 @@
             <div class="thumb"><img src="TheAdventurer/Scene01.png"></div>
         </div>
         <p>
-            (P1-2) Screenshots of <em><u>Captain Cabin</u></em>. Embeded in <a>March 2025</a>.
-            (P3) <em><u>Scene Design</u></em>. Designed and illustrated in <a>January 2025</a>.
+            (P1-2) Screenshots of <em>Captain Cabin</em>. Embeded in <a>March 2025</a>.
+            (P3) <em>Scene Design</em>. Designed and illustrated in <a>January 2025</a>.
         </p>
     </div>
     <p>
@@ -412,8 +421,8 @@
             <div class="thumb"><img src="TheAdventurer/Scene01.png"></div>
         </div>
         <p>
-            (P1-5) Screenshots of <em><u>Gallery</u></em>. Embeded in <a>March 2025</a>.
-            (P6) <em><u>Scene Design</u></em>. Designed and illustrated in <a>January 2025</a>.
+            (P1-5) Screenshots of <em>Gallery</em>. Embeded in <a>March 2025</a>.
+            (P6) <em>Scene Design</em>. Designed and illustrated in <a>January 2025</a>.
         </p>
     </div>
     <p>
@@ -458,8 +467,8 @@
             <div class="thumb"><img src="TheAdventurer/Scene02.png"></div>
         </div>
         <p>
-            (P1-4) Screenshots of <em><u>Archive</u></em>. Embeded in <a>March 2025</a>.
-            (P5) <em><u>Scene Design</u></em>. Designed and illustrated in <a>January 2025</a>.
+            (P1-4) Screenshots of <em>Archive</em>. Embeded in <a>March 2025</a>.
+            (P5) <em>Scene Design</em>. Designed and illustrated in <a>January 2025</a>.
         </p>
     </div>
     <p>
@@ -468,7 +477,7 @@
 
     <div style="height:200px;"></div>
 
-    <h2>Characters</h2>
+    <h2 id = "Character">Character</h2>
     <div class="gallerysample">
         <div class="HoverImage">
             <div class="galleryitem">
@@ -491,12 +500,12 @@
             <div class="thumb"><img src="TheAdventurer/RangerConcept0.png"></div>
         </div>
         <p>
-            (P1) <em><u>General Character First Draft</u></em>. Designed and illustrated in <a>November 2024</a>.
-            (P2-4)<em><u>Character Drafting</u></em> of Thorina Ecarwern, Michael Jr. Hessenfeld, Eindride Sprusthron.     Designed and illustrated in <a>November 2024</a>.
+            (P1) <em>General Character First Draft</em>. Designed and illustrated in <a>November 2024</a>.
+            (P2-4) <em>Character Drafting</em> of Thorina Ecarwern, Michael Jr. Hessenfeld, Eindride Sprusthron.     Designed and illustrated in <a>November 2024</a>.
         </p>
     </div>
 
-     <div style="height:200px;"></div>
+     <div style="height:75px;"></div>
 
     <div class="H3">
         <img src="TheAdventurer/BardLogo1.png">
@@ -631,7 +640,7 @@
 
      <div style="height:200px;"></div>
             
-    <h2>Endings</h2>
+    <h2 id = "Ending">Ending</h2>
     <div class="gallerysample">
         <div class="HoverImage">
             <div class="galleryitem">
@@ -667,7 +676,7 @@
     
      <div style="height:200px;"></div>
 
-    <div class="H1">
+    <div class="H1" id = "Play">
         <img src="TheAdventurer/H1Play.png">
     </div>
     <h2>Walkthrough</h2>
