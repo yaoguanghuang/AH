@@ -197,13 +197,18 @@ html, body {
 }
 
 .JumpTo h3 {
+    font-family: "Typwrng";
+    font-weight: 600;
+    font-size: 12px;
+    color:black;
     margin-bottom: 5px; 
+    text-decoration: underline;
 }
 
 .JumpTo h3 a{
     font-family: "Typwrng";
     font-weight: 600;
-    font-size: 16px;
+    font-size: 14px;
     color:#8e2828
 }
 
@@ -218,7 +223,7 @@ html, body {
 .sidework p a{
     font-family: "Typwrng";
     font-weight: 500;
-    font-size: 14px;
+    font-size: 12px;
     color:#1e3328;
 }
 
