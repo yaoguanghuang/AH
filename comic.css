@@ -155,38 +155,26 @@ html, body {
 }
 
 .Contents {
-    margin-left: 15%; 
-    width:85%;
-    padding-top: 0.5%;
-    padding-bottom:10%;
-}
-
-.Contents h1 {
-    color:rgb(0, 0, 0);
-    font-size: 96px;
-    width: 900px;
-    margin:auto;
-    pointer-events: none;
-    font-family: "Fredericka the Great", serif;
-    font-style: normal;
-    padding-top: 2%;
+    margin-left: 12.5%; 
+    width:57.5%;
+    overflow: visible;
+    padding-bottom: 20%; 
+    padding-top: 20px;
 }
 
 .Contents h2 {
     color:rgb(0, 0, 0);
     font-size: 40px;
-    width: 900px;
-    margin:auto;
+    text-align: center;
     pointer-events: none;
-    font-family: "Kranky", serif;
+    font-family:  "Fredoka", sans-serif;
     font-style: normal;
 }
 
 .Contents p{
-    width:900px;
     margin:auto;
     text-align: left;
-    font-family: "Playpen Sans", serif;
+    font-family:  "Fredoka", sans-serif;
     font-weight: 400;
     font-style: normal;
     padding-bottom:10px;
@@ -196,160 +184,248 @@ html, body {
 .Contents p em {
     font-style: italic;
     font-weight:bold;
-    color:#8d191c;
+    color:#b11f29;
   }
 
 .Contents .caption{
-    text-align:center;
+    text-align:left;
     margin:auto;
     width:900px;
     font-size: 16px;
-    font-family: "Playpen Sans", serif;
-    font-weight: 800;
-    font-style: normal;
-    padding-bottom: 20px;
-}
-
-.Contents .caption2{
-    text-align:center;
-    margin:auto;
-    width:450px;
-    font-size: 16px;
-    font-family: "Playpen Sans", serif;
-    font-weight: 800;
+    font-family:  "Fredoka", sans-serif;
+    font-weight: 400;
     font-style: normal;
     padding-bottom: 10px;
+    padding-top: 5px;
 }
 
-.Section {
-    margin-bottom: 7.5%;
-    display: flex;
-    flex-direction: column;
-}
 
-/* seperated comics */
-
-.SwearJar{
+.Strip{
     margin:auto;
-    height:620px;
-    width:900px;
-    overflow-x:scroll;
+    height:570px;
+    width:855px;
+    border: 2px solid black;
+    overflow-x:auto;
     margin-bottom:5px;
     margin-top:30px;
 }
 
-.SwearJar img {
-    width: 450px;   
-    height: 600px;
+.Strip img {
+    width: 427.5px;
+    display:flex;
     transform: scale(1);  
 }
 
-.Smoke{
+.SingleStrip{
     margin:auto;
-    height:600px;
-    width:900px;
-    display:flex;
+    width:427.5px;
     margin-bottom:5px;
     margin-top:30px;
+    border: 2px solid black;
 }
 
-.Smoke img{
-    width:450px;
-    height:600px;
-    transform: scale(1);
-}
-
-.ADate{
-    margin:auto;
-    height:600px;
-    width:900px;
+.SingleStrip img{
+    width:427.5px;
     display:flex;
-    margin-bottom:5px;
-    margin-top:30px;
-}
-
-.ADate.img{
-    width:450px;
-    height:600px;
+    height:auto;
     transform: scale(1);
-}
-
-.Shoellace{
-    margin:auto;
-    height:600px;
-    width:450px;
-    display:flex;
-    margin-bottom:5px;
-    margin-top:30px;
-}
-
-.Shoellace.img{
-    width:450px;
-    height:600px;
-    transform: scale(1);
-}
-
-.Nightmare{
-    margin:auto;
-    height:450px;
-    width:450px;
-    display:flex;
-    margin-bottom:5px;
-    margin-top:30px;
-}
-
-.Nightmare img{
-    width:450px;
-    height:450px;
-    transform: scale(1);
-}
-
-.Eyedrop{
-    margin:auto;
-    height:450px;
-    width:450px;
-    display:flex;
-    margin-bottom:5px;
-    margin-top:30px;
-}
-
-.Eyedrop img{
-    width:450px;
-    height:450px;
-    transform: scale(1);
-}
-
-.AGift{
-    margin:auto;
-    height:450px;
-    width:450px;
-    display:flex;
-    margin-bottom:5px;
-    margin-top:30px;
-}
-
-.AGift img{
-    width:450px;
-    height:450px;
-    transform: scale(1);
-}
-
-footer {
-    color: black;
-    margin-left:14%;
-    background: white;
-    text-align: center;
-    /* position: fixed;  */
-    width: 84.9%; 
-    height:8%;
-    padding-top: 2%;
-    bottom:0;
-    font-size:20px;
-    font-family: "Playpen Sans", sans-serif;
-    font-weight: 800;
-    font-style: normal;
 }
 
 .Contents div {
     display: flex;
 }
+
+.comicbook {
+    display: flex;          
+    justify-content: center; 
+    align-items: center;    
+    margin: auto;
+    height: 570px;
+    width: 855px;
+    gap: 10px;     
+}
+
+.book {
+    width: 427.5px;
+    height: 570px;
+    position: relative;
+    transition: transform 0.5s;
+    justify-content: center;
+}
+
+.paper {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    perspective: 1500px;
+}
+
+.front {
+    backface-visibility: hidden;
+}
+
+.front, 
+.back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    transform-origin: left;
+    transition: transform 0.5s;
+}
+
+.front {
+    z-index: 1;
+}
+
+.back {
+    z-index: 0;
+}
+
+.front-content,
+.back-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.front-content img {
+    max-width: 100%; 
+    max-height: 100%; 
+    object-fit: contain; 
+    display: block;
+}
+
+.back-content img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+    display: block; 
+    margin: 0;
+}
+
+.back-content {
+    transform: rotateY(180deg)
+}
+
+.flipped .front,
+.flipped .back {
+    transform: rotateY(-180deg)
+}
+
+#p1 {
+    z-index: 14;
+}
+
+#p2 {
+    z-index: 13;
+}
+
+#p3 {
+    z-index: 12;
+}
+
+#p4{
+    z-index: 11;
+}
+
+#p5{
+    z-index: 11;
+}
+
+#p6{
+    z-index: 10;
+}
+
+#p7{
+    z-index: 9;
+}
+
+#p8{
+    z-index: 8;
+}
+
+#p9{
+    z-index: 7;
+}
+
+#p10{
+    z-index: 6;
+}
+
+#p11{
+    z-index: 5;
+}
+
+#p12{
+    z-index: 4;
+}
+
+#p13{
+    z-index: 3;
+}
+
+#p14{
+    z-index: 2;
+}
+
+#p15{
+    z-index: 1;
+}
+
+.sidework {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 25%;
+  min-width: 280px;
+  height: 100vh;
+  overflow-y: auto;
+  padding: 20px;
+  background-color: white;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  -ms-overflow-style: none; 
+  scrollbar-width: none;
+}
+
+.sidework::-webkit-scrollbar {
+  display: none;
+}
+
+.sidework .IAFTYAY {
+  width: 100%;
+  max-width: 320px;
+  text-align: center;
+}
+
+.sidework .IAFTYAY img {
+  width: 100%;
+  height: auto; 
+  border-radius: 5px;
+  display: block;
+}
+
+.sidework .IAFTYAY h3 {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #b11f29;
+  font-family: "Fredoka", sans-serif;
+  text-decoration: underline;
+  font-weight: 600;
+}
+

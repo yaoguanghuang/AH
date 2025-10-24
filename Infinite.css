@@ -3,9 +3,15 @@
     padding: 0;
 }
 
-body{
-    background-color: white;
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #87bfff, #54a4ff, #6f7fdd);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
 
 html, body {
     height: 100%;
@@ -21,10 +27,9 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: transparent;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    border-right: 1px solid rgba(255, 255, 255, 0.4);
     padding-left: 30px;
     transition: width 0.3s ease;
     overflow: hidden;
@@ -46,7 +51,7 @@ html, body {
   
 .sidebar h1::before {
     content: "A.";
-    color: black;
+    color: white;
     padding-top: 20px;
     padding-bottom: 10px;
     padding-left: 2px;
@@ -71,7 +76,7 @@ html, body {
     width:100%;
     font-family: "Fredoka", sans-serif;
     font-size: 16px;
-    color: black;
+    color: white;
     display: flex;
     white-space: nowrap;
     align-items: center;
@@ -105,7 +110,7 @@ html, body {
 
 .links .footer {
     margin-top: auto; 
-    color: black;
+    color: white;
     font-size: 16px;
     font-weight: 600;
     padding-bottom: 20px; 
@@ -126,20 +131,20 @@ html, body {
     margin-top: 7.5px;
     margin-bottom: 7.5px;
     border: none; 
-    background-color: black; 
+    background-color: white; 
     height: 1.5px; 
     display: block; 
     border-radius: 1000px;
 }
 
 .links li span {
-    color: black;
+    color:white;
     padding: 12px 5px;
     flex-shrink: 0;
 }
 
 .links li a {
-    color: black;
+    color: white;
     text-decoration: none;
     align-items: center;
     padding: 0px 0px 0px 5px;
@@ -163,7 +168,7 @@ html, body {
     height: 100vh; 
     overflow-y: scroll; 
     padding: 20px;
-    background-color: white;
+    background-color:transparent;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -202,9 +207,9 @@ html, body {
 }
 
 .Trailer a h3{
-    color: black;                   
+    color:white;                   
     text-decoration: underline;  
-    text-decoration-color: black;   
+    text-decoration-color: white;   
 }
 
 .Trailer a h3:hover{
@@ -279,9 +284,9 @@ html, body {
 }
 
 .Itch a h3 {
-    color: black;                   
+    color: white;                   
     text-decoration: underline;  
-    text-decoration-color: black;
+    text-decoration-color: white;
 }
 
 .Itch a h3:hover {
@@ -300,7 +305,7 @@ html, body {
 .contents .fullsample img{
     margin-top: 3%;
     width: 100%;
-    border-radius: 5px;
+    border-radius: 3px;
     height: auto; 
 }
 

@@ -7,6 +7,28 @@ body{
     background-color: #ffc5e5;
 }
 
+::-webkit-scrollbar,
+.fullsample .Characters::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+    background-color: #ff92d3; 
+}
+
+::-webkit-scrollbar-track,
+.fullsample .Characters::-webkit-scrollbar-track {
+    background-color: #ff92d3;
+    border-radius: 6px;
+    box-shadow: inset 0 0 0 3px #ff92d3; 
+    background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb,
+.fullsample .Characters::-webkit-scrollbar-thumb {
+    background-color: #d8006874;
+    border-radius: 6px;
+    border: 3px solid #ff92d3;
+}
+
 html, body {
     height: 100%;
     width: 100%;
@@ -297,11 +319,35 @@ html, body {
 }
 
 .contents .fullsample img{
-    margin-top: 3%;
+    margin-top: 2%;
     width: 100%;
     border-radius: 1.5px;
     height: auto; 
     border: 3px solid #d80067;
+}
+
+.contents .H1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 125px; 
+    padding-bottom: 10px;
+}
+
+.contents .H1 img {
+    max-height: 125px;
+    padding-bottom: 5px; 
+    height: auto;      
+    width: auto;        
+}
+
+.contents h2{
+    color:#d80067;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 600;
+    font-family: "Tiny5", sans-serif;
+    padding-bottom: 10px;
 }
 
 .contents .fullsample p{
@@ -332,12 +378,12 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 170px; 
+    height: 160px; 
     padding-top: 20px;
 }
 
 .contents .logo img {
-    max-height: 170px; 
+    max-height: 160px; 
     height: auto;      
     width: auto;        
 }

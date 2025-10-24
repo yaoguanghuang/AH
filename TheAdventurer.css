@@ -477,6 +477,7 @@ em:hover u {
 .gallerysample {
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 .gallerysample .HoverImage {
@@ -527,9 +528,7 @@ em:hover u {
     justify-content: flex-start;
     gap: 5px;
     margin-top: 10px;
-    flex-wrap: wrap; 
     width: 100%;
-    overflow: hidden;
 }
 
 .gallerysample .thumbnails .thumb {
