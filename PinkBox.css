@@ -182,15 +182,44 @@ html, body {
     right: 0;
     width: 25%; 
     height: 100vh; 
-    overflow-y: scroll; 
-    padding: 20px;
-    background-color: #ffc5e5;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    -ms-overflow-style: none; 
-    scrollbar-width: none; 
+}
 
+.JumpTo {
+    width: 320px;
+    margin-top: auto; 
+    margin-bottom: 25px; 
+    text-align: right;
+}
+
+.JumpTo h3 {
+    font-family: "Fredoka", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color:#d80067;
+    text-decoration: underline;
+}
+
+.JumpTo h3 a{
+    font-weight: 600;
+    font-size: 18px;
+    color:#ff42b0;
+}
+
+.JumpTo h3 a:hover{
+    color:#00c7ff;
+}
+
+.JumpTo p a{
+    font-family: "Fredoka", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color:#ff6ac0;
+}
+
+.JumpTo p a:hover{
+    color:#48ddff;
 }
 
 .sidework::-webkit-scrollbar {
@@ -223,21 +252,21 @@ html, body {
 }
 
 .Trailer a h3{
-    color: #d80067;                   
+    color: #00c7ff;                   
     text-decoration: underline;  
-    text-decoration-color: #d80067;   
+    text-decoration-color: #00c7ff;   
 }
 
 .Trailer a h3:hover{
-    color:#48ddff;                   
+    color:#ff6ac0;                   
     text-decoration: underline;  
-    text-decoration-color: #48ddff;   
+    text-decoration-color: #ff6ac0;   
 }
 
 .Itch {
     width: 320px;
     height: 180px;
-    padding-top: 5px;
+    padding-top: 25px;
     padding-bottom: 25px;
     margin-top: 0px;
     position: relative; 
@@ -247,12 +276,16 @@ html, body {
     width: 100%;
     height: 100%;
     object-fit: cover; 
-    border-radius: 5px; 
+    border-radius: 5px;
+}
+
+.Itch img.TheAdventurer{
+    border:3px solid #d80067;
 }
 
 .Itch .logo-link {
     position: absolute;
-    top: 37.5%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 120px;
@@ -300,15 +333,15 @@ html, body {
 }
 
 .Itch a h3 {
-    color: #d80067;                   
+    color: #ff42b0;                   
     text-decoration: underline;  
-    text-decoration-color: #d80067;
+    text-decoration-color: #ff42b0;
 }
 
 .Itch a h3:hover {
-    color: #ffd93b;             
+    color: #48ddff;             
     text-decoration: underline;  
-    text-decoration-color: #ffd93b;
+    text-decoration-color: #48ddff;
 }
 
 .contents {
@@ -319,7 +352,6 @@ html, body {
 }
 
 .contents .fullsample img{
-    margin-top: 2%;
     width: 100%;
     border-radius: 1.5px;
     height: auto; 
@@ -331,7 +363,7 @@ html, body {
     justify-content: center;
     align-items: center;
     height: 125px; 
-    padding-bottom: 10px;
+    padding-bottom: 25px;
 }
 
 .contents .H1 img {
@@ -343,11 +375,10 @@ html, body {
 
 .contents h2{
     color:#d80067;
-    font-size: 40px;
+    font-size: 54px;
     text-align: center;
-    font-weight: 600;
     font-family: "Tiny5", sans-serif;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .contents .fullsample p{
@@ -378,17 +409,222 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 160px; 
-    padding-top: 20px;
+    height: 170px; 
+    padding-top: 15px;
 }
 
 .contents .logo img {
-    max-height: 160px; 
+    max-height: 170px; 
     height: auto;      
     width: auto;        
 }
 
-.contents div {
+.Contents .OneThirdSample {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.Contents .OneThirdSample img {
+  width: 33%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  border: none !important;
+  border-radius: 0 !important;
+}
+
+.contents div {
     flex-direction: column; 
+}
+
+.gallerysample {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.gallerysample .HoverImage {
+    position: relative;
+    box-sizing: border-box; 
+    cursor: pointer;
+    width: 100%;
+    border:3px solid #d80067;
+}
+
+.gallerysample .HoverImage img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    transition: opacity 0.25s ease;
+}
+
+.gallerysample .HoverImage .hover {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.gallerysample .HoverImage:hover .hover {
+    opacity: 1;
+}
+
+.gallerysample .galleryitem {
+    display: none;       
+    max-height: 500px; 
+    border-radius: 1.5px;
+    overflow: auto;    
+    position: relative;
+    background-color: #ff92d3;
+}
+
+.gallerysample .galleryitem img {
+    width: 100%;         
+    height: auto;  
+    display: block;
+    object-fit: contain;
+}
+
+.gallerysample .thumbnails {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 5px;
+    margin-top: 5px;
+    width: 100%;
+}
+
+.gallerysample .thumbnails .thumb {
+    flex: 0 0 calc((100% - 4 * 5px) / 5); 
+    cursor: pointer;
+    border: 3px solid #d80067;
+    transition: border 0.3s;
+    border-radius: 1.5px;
+    box-sizing: border-box;
+}
+
+.gallerysample .thumbnails .thumb.active {
+    border:3px solid #d80067;
+    position: relative;
+}
+
+.gallerysample .thumbnails .thumb.active::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#d800683b;
+    pointer-events: none;
+}
+
+.gallerysample .thumbnails .thumb img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+.contents .gallerysample p{
+    font-size: 14px;
+    text-align: left;
+    padding-top: 5px;
+    margin-bottom: 0px;
+    font-weight: 400;
+}
+
+.contents .gallerysample p a{
+    font-weight:800;
+    font-style: italic;
+    text-decoration: underline;
+    color: #00c7ff;
+}
+
+.contents .gallerysample p a:hover{
+    font-style: italic;
+    text-decoration: underline;
+    color: #00c7ff;
+}
+
+em {
+  font-style: italic;
+  text-decoration: underline;
+  font-weight:600;
+  transition: 0.2s ease;
+  color: #ff42b0;
+}
+
+em:hover {
+  color:#ff42b0;
+}
+
+.fullsample .HoverImage {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.fullsample .HoverImage img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    transition: opacity 0.5s ease;
+}
+
+.fullsample .HoverImage .hover {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.fullsample .HoverImage:hover .hover {
+    opacity: 1;
+}
+
+.H3 {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: center;
+    gap: 7.5px;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+    padding-bottom: 10px;
+}
+
+.H3 img.app{
+    height: 40px;
+    width: auto;
+    flex-shrink: 0;
+    border:3px solid #d80067;
+    border-radius: 6px;
+}
+
+.H3 img.Headshot{
+    height: 40px;
+    width: auto;
+    flex-shrink: 0;
+    border:3px solid #d80067;
+    border-radius: 50px;
+}
+
+.H3 img{
+    height: 50px;
+    width: auto;
+    flex-shrink: 0;
+}
+
+.H3 h3 {
+    margin: 0;
+    white-space: nowrap;
+    font-size: 36px;
+    font-family: "Fredoka", sans-serif;
+    font-weight: 500;
+    color: #d80067;
 }

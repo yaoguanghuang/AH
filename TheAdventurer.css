@@ -501,14 +501,6 @@ em:hover {
   color:#1e3328;
 }
 
-.Contents .Section{
-    padding-bottom: 200px;
-}
-
-.Contents .SecondSection{
-    padding-bottom: 75px;
-}
-
 .gallerysample {
     display: flex;
     flex-direction: column;
