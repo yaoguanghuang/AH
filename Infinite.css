@@ -3,19 +3,40 @@
     padding: 0;
 }
 
-body {
-    margin: 0;
-    min-height: 100vh;
+html, body {
+    height: 100%;
+    width: 100%;
     background: linear-gradient(to bottom, #87bfff, #54a4ff, #6f7fdd);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+    overscroll-behavior: none;
 }
 
+::-webkit-scrollbar,
+.fullsample .Characters::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+    background-color: #87bfff; 
+}
 
-html, body {
-    height: 100%;
-    width: 100%;
+::-webkit-scrollbar-track,
+.fullsample .Characters::-webkit-scrollbar-track {
+    background-color:#6f7fdd;
+    box-shadow: inset 0 0 0 3px #6f7fdd; 
+    background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb,
+.fullsample .Characters::-webkit-scrollbar-thumb {
+    background-color: #1e0b6050;
+    border-radius: 6px;
+    border: 3px solid #6f7fdd;
+}
+
+::-webkit-scrollbar-thumb:hover,
+.fullsample .Characters::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0,0,0,0.45);
 }
 
 .sidebar {
@@ -303,7 +324,6 @@ html, body {
 }
 
 .contents .fullsample img{
-    margin-top: 3%;
     width: 100%;
     border-radius: 3px;
     height: auto; 
@@ -315,23 +335,36 @@ html, body {
     padding-top: 5px;
     margin-bottom: 1%;
     font-weight: 400;
+    color:white;
 }
 
 .contents .fullsample p a{
     font-weight: 600;
     font-style: italic;
     text-decoration: underline;
-    color: black;
+    color: white;
 }
 
-.contents h1 {
-    color:rgb(0, 0, 0);
-    font-size: 64px;
-    text-align: left;
+.contents h2{
+    color:white;
+    font-size: 60px;
+    text-align: center;
     font-weight: 600;
-    font-family: "Fredoka", sans-serif;
-    padding-top: 4%;
-    padding-bottom: 2%;
+    font-family: "Arcade", serif;
+}
+
+@font-face {
+    font-family: "Arcade";
+    src: url("Infinite/ARCADE.TTF") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Digital";
+    src: url("Infinite/01-digit.regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
 }
 
 .contents p{
@@ -360,3 +393,175 @@ html, body {
     display: flex;
     flex-direction: column; 
 }
+
+.contents .H1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px; 
+    padding-bottom: 25px;
+}
+
+.contents .H1 img {
+    max-height: 120px;
+    padding-bottom: 5px; 
+    height: auto;      
+    width: auto;        
+}
+
+.H3 {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+    padding-bottom: 10px;
+}
+
+.H3 img{
+    height: 64px;
+    width: auto;
+    flex-shrink: 0;
+}
+
+.H3 img.Narrator{
+    height: 48px;
+    width: auto;
+    flex-shrink: 0;
+    padding: 5px;
+}
+
+.H3 h3 {
+    color:white;
+    font-size: 36px;
+    text-align: center;
+    font-weight: 600;
+    font-family: "Digital", serif;
+    letter-spacing: 2.5px;
+}
+
+.StateMachineWapper .BirdDescription{
+    width: 375px;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: rgba(21, 54, 6, 0.5);
+    padding: 15px;
+    margin-left: auto;
+    margin-right: 35px; 
+    border-radius: 10px;
+}
+
+.StateMachineWapper.L2 .BirdDescription{
+    background-color: rgba(3, 10, 49, 0.5);
+}
+
+.StateMachineWapper.L3 .BirdDescription{
+    background-color: rgba(61, 27, 0, 0.5);
+}
+
+p{
+    color:white;
+}
+
+h4{
+    font-family: "Fredoka", sans-serif;
+    font-weight: 600px;
+    color: white;
+}
+
+.StateMachineWapper{
+    display: flex !important;
+    flex-direction: row !important;
+    margin: auto;
+    width: 100%;
+    height: 240px;
+    background-image: url("Infinite/L1Background.png");
+    background-size: auto 240px;
+    background-position: center;
+    border-radius: 3px;
+}
+
+.StateMachineWapper.L2{
+    background-image: url("Infinite/L2Background.png");
+}
+
+.StateMachineWapper.L3{
+    background-image: url("Infinite/L3Background.png");
+}
+
+.StateMachine {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center;
+  justify-content: space-between;
+  width: 350px;
+  margin-left: 35px;
+  margin-right: auto;
+  gap:5px;
+}
+
+.Bird img {
+  width: 210px;
+  height: auto;
+  display: none;
+}
+
+.Bird img:first-child {
+  display: block;
+}
+
+
+.button {
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+  margin:auto;
+}
+
+.flipped {
+  transform: scaleX(-1);
+}
+
+.button:hover {
+  transform: scale(1.1);
+}
+
+.button.flipped:hover {
+  transform: scale(-1.1, 1.1);
+}
+
+.button:active {
+  transform: scale(0.95);
+}
+
+.button.flipped:active {
+  transform: scale(-0.95, 0.95);
+}
+
+.Map{
+    height: 282px;
+    width: auto;
+    background-image: url(Infinite/L1Background.png);
+    background-size: auto 270px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.Map img{
+    display: block;  
+    height: 270px;
+    width: 1920px;
+}
+
+.Map.L2{
+    background-image: url(Infinite/L2Background.png);
+}
+
+.Map.L3{
+    background-image: url(Infinite/L3Background.png);
+}
+
+
+

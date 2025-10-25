@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
     <meta charset="utf-8" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script src="StateMachine.js"></script>
     </head>
 
     <body>
@@ -89,16 +90,258 @@
         <div class="fullsample">
             <img src="Game/Infinite.png">
         </div>
-        <h1>Vision</h1>
-        <h2>Motive</h2>
-        <h2>Inspiration</h2>
-        <h2>Aesthetic</h2>
-        <h1>Design</h1>
-        <h2>1st Level</h2>
-        <h2>2nd Level</h2>
-        <h2>3rd Level</h2>
-        <h2>Keys & Coins</h2>
-        <h1>Play</h1>
+        
+        <div style="height:200px;"></div>
+
+        <div class="H1" id = "Vision">
+        <img src="Infinite/H1Vision.png">
+        </div>
+        
+        <h2>MOTIVE</h2>
+        <h2>INSPIRATION</h2>
+        <h2>AESTHETIC</h2>
+
+        <div style="height:200px;"></div>
+
+        <div class="H1" id = "Design">
+        <img src="Infinite/H1Design.png">
+        </div>
+
+        <h2>LEVELs</h2>
+
+        <div class="H3">
+        <img src="Infinite/0Player0.png">
+        <h3>LEVEL1</h3>
+        <img src="Infinite/0Player1.png">
+        </div>
+
+        <div class = "Map">
+            <img src="Infinite/L1.png">
+        </div>
+        <p>
+            L1 represents the first phase of the clawless sparrow’s life: the early childhood of General Z Chinese students (2008-2013), while they experienced an economic boom and the late phase of the one-child policy. The game art of this map tries to replicate the town scene of the millennial years of China, the memory of my childhood about streets and architecture. L1 is relatively easy to finish because the player owns the complete HD screen as the sparrow flying space(1920*1080).
+        </p>
+
+        <div style="height:75px;"></div>
+
+        <div class = "StateMachineWapper">
+            <div class="StateMachine" data-left="leftButton" data-right="rightButton">
+                <img id="leftButton" class="button" src="Infinite/0Arrow0.png" alt="Left Button">
+                <div class="Bird">
+                    <img src="Infinite/0Staying.gif" alt="Bird State">
+                    <img src="Infinite/0Walking.gif" alt="Bird State">
+                    <img src="Infinite/0Flying.gif" alt="Bird State">
+                    <img src="Infinite/0Loop.gif" alt="Bird State">
+                    <img src="Infinite/0Dead.gif" alt="Bird State">
+                    <img src="Infinite/0Wetted.gif" alt="Bird State">
+                    <img src="Infinite/0WettedStaying.gif" alt="Bird State">
+                    <img src="Infinite/0WettedWalking.gif" alt="Bird State">
+                    <img src="Infinite/0WettedFlying.gif" alt="Bird State">
+                    <img src="Infinite/0WettedLoop.gif" alt="Bird State">
+                    <img src="Infinite/0WettedDead.gif" alt="Bird State">
+                    <img src="Infinite/0Finished.gif" alt="Bird State">
+                </div>
+                <img id="rightButton" class="button flipped" src="Infinite/0Arrow0.png" alt="Right Button">
+            </div>
+            <div class = "BirdDescription">
+                <h4>STAYING</h4>
+                <p>
+                    L1 represents the first phase of the clawless sparrow’s life: the early childhood of General Z Chinese students (2008-2013), while they experienced an economic boom and the late phase of the one-child policy. 
+                </p>
+            </div>
+        </div>
+        <p>
+            The main character for this level is a child-bird with lighter, cleaner colors as well, who also owns plenty of energy that is easy to recover. In this stage, the player will feel that the sparrow is energetic, light-weighted, and easy to control, just like the times-benefits of the economic boom experienced in childhood.
+        </p>
+        
+        <div style="height:75px;"></div>
+
+        <div class="H3">
+        <img src="Infinite/1Player0.png">
+        <h3>LEVEL2</h3>
+        <img src="Infinite/1Player1.png">
+        </div>
+
+         <div class = "Map L2">
+            <img src="Infinite/L2.png">
+        </div>
+        <p>
+            L2 represents the second phase of the clawless sparrow’s life: teen years of General Z Chinese students(2013-2018), while they experienced the benefits of national growth and acceptance and propaganda of striving culture. The game art of this map tries to replicate the city scene of the economic peak of China, the memory of my teen years about the new tech, advertisements, and thriving industries.  L2 starts to have the space squeeze compared to the L1, the flying space becomes narrower(1920*945).
+        </p>
+
+        <div style="height:75px;"></div>
+
+        <div class = "StateMachineWapper L2">
+            <div class="StateMachine" data-left="leftButton2" data-right="rightButton2">
+                <img id="leftButton2" class="button" src="Infinite/1Arrow0.png" alt="Left Button">
+                <div class="Bird">
+                    <img src="Infinite/1Staying.gif" alt="Bird State">
+                    <img src="Infinite/1Walking.gif" alt="Bird State">
+                    <img src="Infinite/1Flying.gif" alt="Bird State">
+                    <img src="Infinite/1Loop.gif" alt="Bird State">
+                    <img src="Infinite/1Dead.gif" alt="Bird State">
+                    <img src="Infinite/1Wetted.gif" alt="Bird State">
+                    <img src="Infinite/1WettedStaying.gif" alt="Bird State">
+                    <img src="Infinite/1WettedWalking.gif" alt="Bird State">
+                    <img src="Infinite/1WettedFlying.gif" alt="Bird State">
+                    <img src="Infinite/1WettedLoop.gif" alt="Bird State">
+                    <img src="Infinite/1WettedDead.gif" alt="Bird State">
+                    <img src="Infinite/1Finsihed.gif" alt="Bird State">
+                </div>
+                <img id="rightButton2" class="button flipped" src="Infinite/1Arrow0.png" alt="Right Button">
+            </div>
+            <div class = "BirdDescription">
+                <h4>STAYING</h4>
+                <p>
+                    L2 represents the first phase of the clawless sparrow’s life: the early childhood of General Z Chinese students (2008-2013), while they experienced an economic boom and the late phase of the one-child policy. 
+                </p>
+            </div>
+        </div>
+        <p>
+            The main character for this level is a teenager with medium color, who owns less energy, and takes more time to recover energy than the first stage, however, it is faster, actually the fastest. In this stage, the player will feel like the sparrow is less energetic, in a rush, and probably harder to control.
+        </p>
+
+        <div style="height:75px;"></div>
+
+        <div class="H3">
+        <img src="Infinite/2Player0.png">
+        <h3>LEVEL3</h3>
+        <img src="Infinite/2Player1.png">
+        </div>
+
+        <div class = "Map L3">
+            <img src="Infinite/L3.png">
+        </div>
+        <p>
+            L2 represents the second phase of the clawless sparrow’s life: teen years of General Z Chinese students(2013-2018), while they experienced the benefits of national growth and acceptance and propaganda of striving culture. The game art of this map tries to replicate the city scene of the economic peak of China, the memory of my teen years about the new tech, advertisements, and thriving industries.  L2 starts to have the space squeeze compared to the L1, the flying space becomes narrower(1920*945).
+        </p>
+
+        <div style="height:75px;"></div>
+
+        <div class = "StateMachineWapper L3">
+            <div class="StateMachine" data-left="leftButton3" data-right="rightButton3">
+                <img id="leftButton3" class="button" src="Infinite/2Arrow0.png" alt="Left Button">
+                <div class="Bird">
+                    <img src="Infinite/2Staying.gif" alt="Bird State">
+                    <img src="Infinite/2Walking.gif" alt="Bird State">
+                    <img src="Infinite/2Flying.gif" alt="Bird State">
+                    <img src="Infinite/2Loop.gif" alt="Bird State">
+                    <img src="Infinite/2Dead.gif" alt="Bird State">
+                    <img src="Infinite/2Wetted.gif" alt="Bird State">
+                    <img src="Infinite/2WettedStaying.gif" alt="Bird State">
+                    <img src="Infinite/2WettedWalking.gif" alt="Bird State">
+                    <img src="Infinite/2WettedFlying.gif" alt="Bird State">
+                    <img src="Infinite/2WettedLoop.gif" alt="Bird State">
+                    <img src="Infinite/2WettedDead.gif" alt="Bird State">
+                    <img src="Infinite/2Finsihed.gif" alt="Bird State">
+                </div>
+                <img id="rightButton3" class="button flipped" src="Infinite/2Arrow0.png" alt="Right Button">
+            </div>
+            <div class = "BirdDescription">
+                <h4>STAYING</h4>
+                <p>
+                    L2 represents the first phase of the clawless sparrow’s life: the early childhood of General Z Chinese students (2008-2013), while they experienced an economic boom and the late phase of the one-child policy. 
+                </p>
+            </div>
+        </div>
+        <p>
+            The main character for this level is a teenager with medium color, who owns less energy, and takes more time to recover energy than the first stage, however, it is faster, actually the fastest. In this stage, the player will feel like the sparrow is less energetic, in a rush, and probably harder to control.
+        </p>
+
+        <div style="height:200px;"></div>
+
+        <h2>NPCs</h2>
+        <div class="H3">
+        <img src="Infinite/NPC00.png">
+        <h3>NPC1</h3>
+        <img src="Infinite/NPC01.png">
+        </div>
+        <div class = "StateMachineWapper">
+            <div class="StateMachine" data-left="leftButton4" data-right="rightButton4">
+                <img id="leftButton4" class="button" src="Infinite/0Arrow0.png" alt="Left Button">
+                <div class="Bird">
+                    <img src="Infinite/N2Staying.gif" alt="Bird State">
+                    <img src="Infinite/N2Flying.gif" alt="Bird State">
+                    <img src="Infinite/N2Finished.gif" alt="Bird State">
+                    <img src="Infinite/N2Dead.gif" alt="Bird State">
+                </div>
+                <img id="rightButton4" class="button flipped" src="Infinite/0Arrow0.png" alt="Right Button">
+            </div>
+            <div class = "BirdDescription">
+                <h4>STAYING</h4>
+                <p>
+                    L2 represents the first phase of the clawless sparrow’s life: the early childhood of General Z Chinese students (2008-2013), while they experienced an economic boom and the late phase of the one-child policy. 
+                </p>
+            </div>
+        </div>
+
+        <div style="height:75px;"></div>
+
+        <div class="H3">
+        <img src="Infinite/NPC10.png">
+        <h3>NPC2</h3>
+        <img src="Infinite/NPC11.png">
+        </div>
+        <div class = "StateMachineWapper L2">
+            <div class="StateMachine" data-left="leftButton5" data-right="rightButton5">
+                <img id="leftButton5" class="button" src="Infinite/1Arrow0.png" alt="Left Button">
+                <div class="Bird">
+                    <img src="Infinite/N0Staying.gif" alt="Bird State">
+                    <img src="Infinite/N0Flying.gif" alt="Bird State">
+                    <img src="Infinite/N0Finished.gif" alt="Bird State">
+                    <img src="Infinite/N0Dead.gif" alt="Bird State">
+                </div>
+                <img id="rightButton5" class="button flipped" src="Infinite/1Arrow0.png" alt="Right Button">
+            </div>
+            <div class = "BirdDescription">
+                <h4>STAYING</h4>
+                <p>
+                    L2 represents the first phase of the clawless sparrow’s life: the early childhood of General Z Chinese students (2008-2013), while they experienced an economic boom and the late phase of the one-child policy. 
+                </p>
+            </div>
+        </div>
+
+        <div style="height:75px;"></div>
+
+        <div class="H3">
+        <img src="Infinite/NPC20.png">
+        <h3>NPC3</h3>
+        <img src="Infinite/NPC21.png">
+        </div>
+        <div class = "StateMachineWapper L3">
+            <div class="StateMachine" data-left="leftButton6" data-right="rightButton6">
+                <img id="leftButton6" class="button" src="Infinite/2Arrow0.png" alt="Left Button">
+                <div class="Bird">
+                    <img src="Infinite/N1Staying.gif" alt="Bird State">
+                    <img src="Infinite/N1Flying.gif" alt="Bird State">
+                    <img src="Infinite/N1Finished.gif" alt="Bird State">
+                    <img src="Infinite/N1Dead.gif" alt="Bird State">
+                </div>
+                <img id="rightButton6" class="button flipped" src="Infinite/2Arrow0.png" alt="Right Button">
+            </div>
+            <div class = "BirdDescription">
+                <h4>STAYING</h4>
+                <p>
+                    L2 represents the first phase of the clawless sparrow’s life: the early childhood of General Z Chinese students (2008-2013), while they experienced an economic boom and the late phase of the one-child policy. 
+                </p>
+            </div>
+        </div>
+
+        <div style="height:75px;"></div>
+
+        <div class="H3" class = "Narrator">
+        <img src="Infinite/Narrator0.png" class = "Narrator">
+        <h3>Narrator</h3>
+        <img src="Infinite/Narrator1.png" class = "Narrator">
+        </div>
+
+        <div style="height:200px;"></div>
+
+        <div class="H1" id = "Play">
+        <img src="Infinite/H1play.png">
+        </div>
+        <h2>WALKTHROUGH</h2>
+        <h2>PLATFORM</h2>
         </div>
 
         <div class = "sidework">
