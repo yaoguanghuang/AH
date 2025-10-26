@@ -460,7 +460,6 @@ html, body {
     height: auto;
     display: block;
     object-fit: contain;
-    transition: opacity 0.25s ease;
 }
 
 .gallerysample .HoverImage .hover {
@@ -572,7 +571,6 @@ em:hover {
     height: auto;
     display: block;
     object-fit: contain;
-    transition: opacity 0.5s ease;
 }
 
 .fullsample .HoverImage .hover {

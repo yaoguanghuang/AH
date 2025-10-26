@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
         hoverEl.style.visibility = 'hidden';
 
         item.addEventListener('mouseenter', () => {
-            normalEl.style.visibility = 'hidden';
+            normalEl.style.opacity = 'hidden';
             hoverEl.style.visibility = 'visible';
             
             if (hoverEl.tagName.toLowerCase() === 'video') {
