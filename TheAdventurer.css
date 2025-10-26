@@ -356,16 +356,6 @@ html, body {
     padding-bottom: 20%; 
 }
 
-.contents .Fullsample video {
-    margin-top: 20px;
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    border-radius: 1.5px;
-    border: none;
-    display: block;
-    object-fit: cover; 
-}
-
 .contents .Fullsample p{
     font-size: 14px;
     text-align: left;
@@ -514,7 +504,8 @@ em:hover {
     width: 100%;
 }
 
-.gallerysample .HoverImage img {
+.gallerysample .HoverImage img,
+.gallerysample .HoverImage video {
     width: 100%;
     height: auto;
     display: block;
@@ -523,15 +514,12 @@ em:hover {
 }
 
 .gallerysample .HoverImage .hover {
-    opacity: 0;
+    visibility: hidden;
     position: absolute;
     top: 0;
     left: 0;
 }
 
-.gallerysample .HoverImage:hover .hover {
-    opacity: 1;
-}
 
 .gallerysample .galleryitem {
     display: none;       
@@ -633,7 +621,8 @@ em:hover {
     cursor: pointer;
 }
 
-.fullsample .HoverImage img {
+.fullsample .HoverImage img,
+.fullsample .HoverImage video {
     width: 100%;
     height: auto;
     display: block;
@@ -642,15 +631,12 @@ em:hover {
 }
 
 .fullsample .HoverImage .hover {
-    opacity: 0;
+    visibility: hidden;
     position: absolute;
     top: 0;
     left: 0;
 }
 
-.fullsample .HoverImage:hover .hover {
-    opacity: 1;
-}
 
 
 

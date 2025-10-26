@@ -70,6 +70,43 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+    const galleryItems = document.querySelectorAll('.galleryitem, .HoverImage');
+
+    galleryItems.forEach(item => {
+        const normalEl = item.querySelector('.normal');
+        const hoverEl = item.querySelector('.hover');
+        if (!hoverEl || !normalEl) return;
+        hoverEl.style.visibility = 'hidden';
+
+        item.addEventListener('mouseenter', () => {
+            normalEl.style.visibility = 'hidden';
+            hoverEl.style.visibility = 'visible';
+            
+            if (hoverEl.tagName.toLowerCase() === 'video') {
+                hoverEl.play().catch(err => console.log(err));
+            }
+        });
+
+        item.addEventListener('mouseleave', () => {
+            hoverEl.style.visibility = 'hidden';
+            normalEl.style.visibility = 'visible';
+            
+            if (hoverEl.tagName.toLowerCase() === 'video') {
+                hoverEl.pause();
+                hoverEl.currentTime = 0;
+            }
+        });
+    });
+});
+
+
+
+
+
+
+
+
 
 
 
