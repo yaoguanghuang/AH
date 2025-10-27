@@ -187,14 +187,8 @@ html, body {
     right: 0;
     width: 25%; 
     height: 100vh; 
-    overflow-y: scroll; 
-    padding: 20px;
-    background-color:transparent;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    -ms-overflow-style: none; 
-    scrollbar-width: none; 
 
 }
 
@@ -228,15 +222,15 @@ html, body {
 }
 
 .Trailer a h3{
-    color:white;                   
+    color:#4d1be1;                   
     text-decoration: underline;  
-    text-decoration-color: white;   
+    text-decoration-color: #4d1be1;   
 }
 
 .Trailer a h3:hover{
-    color: purple;                   
+    color:#30167f;                   
     text-decoration: underline;  
-    text-decoration-color: purple;   
+    text-decoration-color: #30167f;   
 }
 
 .Itch {
@@ -305,15 +299,57 @@ html, body {
 }
 
 .Itch a h3 {
-    color: white;                   
+    color: #ffbf5c;                   
     text-decoration: underline;  
-    text-decoration-color: white;
+    text-decoration-color: #ffbf5c;
 }
 
 .Itch a h3:hover {
-    color: purple;             
+    color:#ff9900;             
     text-decoration: underline;  
-    text-decoration-color: purple;
+    text-decoration-color: #ff9900;
+}
+
+.JumpTo {
+    width: 320px;
+    margin-top: auto; 
+    margin-bottom: 25px; 
+    text-align: right;
+}
+
+.JumpTo h3 {
+    font-family: "Digital", serif;
+    font-weight: 600;
+    font-size: 20px;
+    padding-bottom: 7.5px;
+    color:white;
+    text-decoration: underline;
+    letter-spacing: 1px;
+}
+
+.JumpTo h3 a{
+    font-weight: 600;
+    color:#ffbf5c;
+}
+
+.JumpTo h3 a:hover{
+    color:#ff9900;
+}
+
+.JumpTo p{
+    padding-bottom: 7.5px;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.JumpTo p a{
+    font-family: "Digital", serif;
+    font-weight: 600;
+    color:#4d1be1;
+}
+
+.JumpTo p a:hover{
+    color:#30167f;
 }
 
 .contents {
@@ -342,7 +378,25 @@ html, body {
     font-weight: 600;
     font-style: italic;
     text-decoration: underline;
-    color: white;
+    color: #ffbf5c;
+}
+
+.contents .fullsample p a:hover{
+    font-style: italic;
+    text-decoration: underline;
+    color: #ff9900;
+}
+
+em {
+  font-style: italic;
+  text-decoration: underline;
+  font-weight:600;
+  transition: 0.2s ease;
+  color:#4d1be1;
+}
+
+em:hover {
+  color:#30167f;
 }
 
 .contents h2{
@@ -352,6 +406,7 @@ html, body {
     font-weight: 600;
     font-family: "Arcade", serif;
 }
+
 
 @font-face {
     font-family: "Arcade";
@@ -441,6 +496,16 @@ html, body {
     letter-spacing: 2.5px;
 }
 
+p{
+    color:white;
+}
+
+h4{
+    font-family: "Fredoka", sans-serif;
+    font-weight: 600px;
+    color: white;
+}
+
 .StateMachineWapper .BirdDescription{
     width: 375px;
     margin-top: auto;
@@ -458,16 +523,6 @@ html, body {
 
 .StateMachineWapper.L3 .BirdDescription{
     background-color: rgba(61, 27, 0, 0.5);
-}
-
-p{
-    color:white;
-}
-
-h4{
-    font-family: "Fredoka", sans-serif;
-    font-weight: 600px;
-    color: white;
 }
 
 .StateMachineWapper{
@@ -502,7 +557,7 @@ h4{
 }
 
 .Bird img {
-  width: 210px;
+  width: 210px !important;
   height: auto;
   display: none;
 }
@@ -513,8 +568,8 @@ h4{
 
 
 .button {
-  width: 48px;
-  height: 48px;
+  width: 48px !important;
+  height: 48px !important;
   cursor: pointer;
   transition: transform 0.1s ease;
   margin:auto;
@@ -540,7 +595,7 @@ h4{
   transform: scale(-0.95, 0.95);
 }
 
-.Map{
+.contents .Map{
     height: 282px;
     width: auto;
     background-image: url(Infinite/L1Background.png);
@@ -549,19 +604,164 @@ h4{
     overflow-y: hidden;
 }
 
-.Map img{
+.contents .Map img{
     display: block;  
     height: 270px;
     width: 1920px;
 }
 
-.Map.L2{
+.contents .Map.L2{
     background-image: url(Infinite/L2Background.png);
 }
 
-.Map.L3{
+.contents .Map.L3{
     background-image: url(Infinite/L3Background.png);
 }
 
+.Contents .OneThirdSample {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.Contents .OneThirdSample img {
+  width: 33%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  border: none !important;
+  border-radius: 0 !important;
+}
+
+.fullsample .HoverImage {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.fullsample .HoverImage img,
+.fullsample .HoverImage video {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    transition: opacity 0.5s ease;
+}
+
+.fullsample .HoverImage .hover {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.gallerysample {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.gallerysample .HoverImage {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    width: 100%;
+}
+
+.gallerysample .HoverImage img,
+.gallerysample .HoverImage video {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    transition: opacity 0.25s ease;
+}
+
+.gallerysample .HoverImage .hover {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.gallerysample .galleryitem {
+    display: none;       
+    max-height: 500px; 
+    border-radius: 1.5px;
+    overflow: auto;    
+    position: relative;
+    background-color: #b99b67;
+}
+
+.gallerysample .galleryitem img {
+    width: 100%;         
+    height: auto;  
+    display: block;
+    object-fit: contain;
+}
+
+.gallerysample .thumbnails {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 5px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.gallerysample .thumbnails .thumb {
+    flex: 0 0 calc((100% - 4 * 5px) / 5); 
+    cursor: pointer;
+    border: 3px solid transparent;
+    transition: border 0.3s;
+    border-radius: 1.5px;
+    box-sizing: border-box;
+}
+
+.gallerysample .thumbnails .thumb.active {
+    border-color: #30167f;
+    position: relative;
+}
+
+.gallerysample .thumbnails .thumb.active::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#1d0b6070;
+    pointer-events: none;
+}
+
+.gallerysample .thumbnails .thumb img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+.contents .gallerysample p{
+    font-size: 14px;
+    text-align: left;
+    padding-top: 5px;
+    margin-bottom: 0px;
+    font-weight: 400;
+}
+
+.contents .gallerysample p a{
+    font-weight:800;
+    font-style: italic;
+    text-decoration: underline;
+    color: #ffbf5c;
+}
+
+.contents .gallerysample p a:hover{
+    font-style: italic;
+    text-decoration: underline;
+    color: #ff9900;
+}
 
 

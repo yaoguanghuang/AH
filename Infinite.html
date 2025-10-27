@@ -8,6 +8,7 @@
     <meta charset="utf-8" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <script src="StateMachine.js"></script>
+    <script src="ImageSlide.js"></script>
     </head>
 
     <body>
@@ -87,9 +88,22 @@
             <div class="logo">
             <img src="Infinite/Logo.png">
         </div>
+
         <div class="fullsample">
-            <img src="Game/Infinite.png">
+            <div class = "HoverImage">
+                <img src = "Infinite/00.png" class = "normal">
+                <video class="hover" muted loop playsinline preload="auto">
+                    <source src="Infinite/00.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <p>
+                Screenshot of <em>Home Scene</em>. Embeded and illustrated in <a>August 2024</a>.
+            </p>
         </div>
+        <p>
+            Infinite is a Platformer Game where you will play the role of a clawless sparrow who is designed to spend its whole life relentlessly flying until the end. During the playthrough of each level, the 3 different phrases of sparrow’s life expand and reveal the reason and meaning of its journey.
+        </p>
         
         <div style="height:200px;"></div>
 
@@ -98,8 +112,55 @@
         </div>
         
         <h2>MOTIVE</h2>
+        <div class = "fullsample">
+            <div class = "OneThirdSample">
+                <img src = "Infinite/MReference0.png">
+                <img src ="Infinite/MReference1.png">
+                <img src = "Infinite/MReference2.png">
+            </div>
+            <p>
+                Research from 
+                (P1)<a href="https://bipr.jhu.edu/BlogArticles/23-Chinas-Economic-Growth-Slowdown-Will-Be-Long-Term.cfm">JHU B.I.P.R.</a>, 
+                (P2)<a href="https://fortune.com/2023/07/06/china-gen-z-mental-health-crisis-suicide-academic-depression-education/">Fortune</a>, 
+                and (P3)<a href="https://www.statista.com/chart/30631/unemployment-of-16-24-and-25-59-in-china/">Statista</a>.
+            </p>
+        </div>
+
+        <div style="height:75px;"></div>
+
         <h2>INSPIRATION</h2>
+         <div class = "fullsample">
+            <div class = "OneThirdSample">
+                <img src = "Infinite/GReference0.jpg">
+                <img src ="Infinite/GReference1.png">
+                <img src = "Infinite/GReference2.jpg">
+            </div>
+            <p>
+                Screenshot from 
+                (P1)<a href="https://store.steampowered.com/app/386940/Ultimate_Chicken_Horse/" target="_blank"><em>Ultimate Chicken Horse</em></a>, 
+                (P2)<a href="https://store.steampowered.com/app/294140/They_Breathe/" target="_blank"><em>They Breathe</em></a>, 
+                (P3)<a href="https://store.steampowered.com/app/3242750/Level_Devil/" target="_blank"><em>Level Devil</em></a>, 
+                on <a href="https://store.steampowered.com" target="_blank">Steam</a>.
+            </p>
+        </div>
+
+        <div style="height:75px;"></div>
+
         <h2>AESTHETIC</h2>
+        <div class = "fullsample">
+            <div class = "OneThirdSample">
+                <img src = "Infinite/AReference0.png">
+                <img src ="Infinite/AReference1.png">
+                <img src = "Infinite/AReference2.png">
+            </div>
+            <p>
+                Art from illustrators
+                (P1)<a href="https://www.xiaohongshu.com/user/profile/5d05d25f000000001101a83a?xsec_token=ABW4hpAfwKjAi__sGIR7VIMT8bJP0mGA0PWkdaB9Jg6dM=&xsec_source=pc_note" target="_blank"><em>1DO_PXL</em></a>,
+                and (P2-3)<a href="https://www.instagram.com/instant_onion/" target="_blank"><em>Nelson Wu</em>
+                </a>,
+                on <a href="https://www.instagram.com/?hl=en" target="_blank">Instagram</a> and <a href="https://www.xiaohongshu.com/explore" target="_blank">RedNote</a> 
+            </p>
+        </div>
 
         <div style="height:200px;"></div>
 
@@ -115,8 +176,13 @@
         <img src="Infinite/0Player1.png">
         </div>
 
-        <div class = "Map">
-            <img src="Infinite/L1.png">
+        <div class= "fullsample">
+            <div class = "Map">
+                <img src="Infinite/L1.png">
+            </div>
+            <p>
+                <em>Level 1 Map</em>. Designed and illustrated in <a>May 2024</a>.
+            </p>
         </div>
         <p>
             L1 represents the first phase of the clawless sparrow’s life: the early childhood of General Z Chinese students (2008-2013), while they experienced an economic boom and the late phase of the one-child policy. The game art of this map tries to replicate the town scene of the millennial years of China, the memory of my childhood about streets and architecture. L1 is relatively easy to finish because the player owns the complete HD screen as the sparrow flying space(1920*1080).
@@ -124,31 +190,49 @@
 
         <div style="height:75px;"></div>
 
-        <div class = "StateMachineWapper">
-            <div class="StateMachine" data-left="leftButton" data-right="rightButton">
-                <img id="leftButton" class="button" src="Infinite/0Arrow0.png" alt="Left Button">
-                <div class="Bird">
-                    <img src="Infinite/0Staying.gif" alt="Bird State">
-                    <img src="Infinite/0Walking.gif" alt="Bird State">
-                    <img src="Infinite/0Flying.gif" alt="Bird State">
-                    <img src="Infinite/0Loop.gif" alt="Bird State">
-                    <img src="Infinite/0Dead.gif" alt="Bird State">
-                    <img src="Infinite/0Wetted.gif" alt="Bird State">
-                    <img src="Infinite/0WettedStaying.gif" alt="Bird State">
-                    <img src="Infinite/0WettedWalking.gif" alt="Bird State">
-                    <img src="Infinite/0WettedFlying.gif" alt="Bird State">
-                    <img src="Infinite/0WettedLoop.gif" alt="Bird State">
-                    <img src="Infinite/0WettedDead.gif" alt="Bird State">
-                    <img src="Infinite/0Finished.gif" alt="Bird State">
+        <div class="fullsample">
+            <div class = "HoverImage">
+                <img src = "Infinite/04.png" class = "normal">
+                <video class="hover" muted loop playsinline preload="auto">
+                    <source src="Infinite/04.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <p>
+                Screenshot of <em>Level 1</em>. Embeded and illustrated in <a>June 2024</a>.
+            </p>
+        </div>
+
+        <div style="height:75px;"></div>
+
+        <div class ="fullsample">
+            <div class = "StateMachineWapper">
+                <div class="StateMachine" data-left="leftButton" data-right="rightButton">
+                    <img id="leftButton" class="button" src="Infinite/0Arrow0.png" alt="Left Button">
+                    <div class="Bird">
+                        <img src="Infinite/0Staying.gif" alt="Bird State">
+                        <img src="Infinite/0Walking.gif" alt="Bird State">
+                        <img src="Infinite/0Flying.gif" alt="Bird State">
+                        <img src="Infinite/0Loop.gif" alt="Bird State">
+                        <img src="Infinite/0Dead.gif" alt="Bird State">
+                        <img src="Infinite/0Wetted.gif" alt="Bird State">
+                        <img src="Infinite/0WettedStaying.gif" alt="Bird State">
+                        <img src="Infinite/0WettedWalking.gif" alt="Bird State">
+                        <img src="Infinite/0WettedFlying.gif" alt="Bird State">
+                        <img src="Infinite/0WettedLoop.gif" alt="Bird State">
+                        <img src="Infinite/0WettedDead.gif" alt="Bird State">
+                        <img src="Infinite/0Finished.gif" alt="Bird State">
+                    </div>
+                    <img id="rightButton" class="button flipped" src="Infinite/0Arrow0.png" alt="Right Button">
                 </div>
-                <img id="rightButton" class="button flipped" src="Infinite/0Arrow0.png" alt="Right Button">
-            </div>
-            <div class = "BirdDescription">
-                <h4>STAYING</h4>
-                <p>
+                <div class = "BirdDescription">
+                    <h4>STAYING</h4>
+                    <p>
                     L1 represents the first phase of the clawless sparrow’s life: the early childhood of General Z Chinese students (2008-2013), while they experienced an economic boom and the late phase of the one-child policy. 
-                </p>
+                    </p>
+                </div>
             </div>
+            <p><em>Level 1 Protagonist State</em>. Designed and illustrated in <a>March 2024</a>.</p>
         </div>
         <p>
             The main character for this level is a child-bird with lighter, cleaner colors as well, who also owns plenty of energy that is easy to recover. In this stage, the player will feel that the sparrow is energetic, light-weighted, and easy to control, just like the times-benefits of the economic boom experienced in childhood.
@@ -162,8 +246,13 @@
         <img src="Infinite/1Player1.png">
         </div>
 
-         <div class = "Map L2">
-            <img src="Infinite/L2.png">
+        <div class = "fullsample">
+            <div class = "Map L2">
+                <img src="Infinite/L2.png">
+            </div>
+            <p>
+                <em>Level 2 Map</em>. Designed and illustrated in <a>June 2024</a>.
+            </p>
         </div>
         <p>
             L2 represents the second phase of the clawless sparrow’s life: teen years of General Z Chinese students(2013-2018), while they experienced the benefits of national growth and acceptance and propaganda of striving culture. The game art of this map tries to replicate the city scene of the economic peak of China, the memory of my teen years about the new tech, advertisements, and thriving industries.  L2 starts to have the space squeeze compared to the L1, the flying space becomes narrower(1920*945).
@@ -171,31 +260,49 @@
 
         <div style="height:75px;"></div>
 
-        <div class = "StateMachineWapper L2">
-            <div class="StateMachine" data-left="leftButton2" data-right="rightButton2">
-                <img id="leftButton2" class="button" src="Infinite/1Arrow0.png" alt="Left Button">
-                <div class="Bird">
-                    <img src="Infinite/1Staying.gif" alt="Bird State">
-                    <img src="Infinite/1Walking.gif" alt="Bird State">
-                    <img src="Infinite/1Flying.gif" alt="Bird State">
-                    <img src="Infinite/1Loop.gif" alt="Bird State">
-                    <img src="Infinite/1Dead.gif" alt="Bird State">
-                    <img src="Infinite/1Wetted.gif" alt="Bird State">
-                    <img src="Infinite/1WettedStaying.gif" alt="Bird State">
-                    <img src="Infinite/1WettedWalking.gif" alt="Bird State">
-                    <img src="Infinite/1WettedFlying.gif" alt="Bird State">
-                    <img src="Infinite/1WettedLoop.gif" alt="Bird State">
-                    <img src="Infinite/1WettedDead.gif" alt="Bird State">
-                    <img src="Infinite/1Finsihed.gif" alt="Bird State">
+        <div class="fullsample">
+            <div class = "HoverImage">
+                <img src = "Infinite/05.png" class = "normal">
+                <video class="hover" muted loop playsinline preload="auto">
+                    <source src="Infinite/05.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <p>
+                Screenshot of <em>Level 2</em>. Embeded and illustrated in <a>July 2024</a>.
+            </p>
+        </div>
+
+        <div style="height:75px;"></div>
+
+        <div class = "fullsample">
+            <div class = "StateMachineWapper L2">
+                <div class="StateMachine" data-left="leftButton2" data-right="rightButton2">
+                    <img id="leftButton2" class="button" src="Infinite/1Arrow0.png" alt="Left Button">
+                    <div class="Bird">
+                        <img src="Infinite/1Staying.gif" alt="Bird State">
+                        <img src="Infinite/1Walking.gif" alt="Bird State">
+                        <img src="Infinite/1Flying.gif" alt="Bird State">
+                        <img src="Infinite/1Loop.gif" alt="Bird State">
+                        <img src="Infinite/1Dead.gif" alt="Bird State">
+                        <img src="Infinite/1Wetted.gif" alt="Bird State">
+                        <img src="Infinite/1WettedStaying.gif" alt="Bird State">
+                        <img src="Infinite/1WettedWalking.gif" alt="Bird State">
+                        <img src="Infinite/1WettedFlying.gif" alt="Bird State">
+                        <img src="Infinite/1WettedLoop.gif" alt="Bird State">
+                        <img src="Infinite/1WettedDead.gif" alt="Bird State">
+                        <img src="Infinite/1Finsihed.gif" alt="Bird State">
+                    </div>
+                    <img id="rightButton2" class="button flipped" src="Infinite/1Arrow0.png" alt="Right Button">
                 </div>
-                <img id="rightButton2" class="button flipped" src="Infinite/1Arrow0.png" alt="Right Button">
+                <div class = "BirdDescription">
+                    <h4>STAYING</h4>
+                    <p>
+                        L2 represents the first phase of the clawless sparrow’s life: the early childhood of General Z Chinese students (2008-2013), while they experienced an economic boom and the late phase of the one-child policy. 
+                    </p>
+                </div>
             </div>
-            <div class = "BirdDescription">
-                <h4>STAYING</h4>
-                <p>
-                    L2 represents the first phase of the clawless sparrow’s life: the early childhood of General Z Chinese students (2008-2013), while they experienced an economic boom and the late phase of the one-child policy. 
-                </p>
-            </div>
+            <p><em>Level 2 Protagonist State</em>. Designed and illustrated in <a>April 2024</a>.</p>
         </div>
         <p>
             The main character for this level is a teenager with medium color, who owns less energy, and takes more time to recover energy than the first stage, however, it is faster, actually the fastest. In this stage, the player will feel like the sparrow is less energetic, in a rush, and probably harder to control.
@@ -209,8 +316,13 @@
         <img src="Infinite/2Player1.png">
         </div>
 
-        <div class = "Map L3">
+        <div class = "fullsample">
+             <div class = "Map L3">
             <img src="Infinite/L3.png">
+            </div>
+            <p>
+                <em>Level 3 Map</em>. Designed and illustrated in <a>July 2024</a>.
+            </p>
         </div>
         <p>
             L2 represents the second phase of the clawless sparrow’s life: teen years of General Z Chinese students(2013-2018), while they experienced the benefits of national growth and acceptance and propaganda of striving culture. The game art of this map tries to replicate the city scene of the economic peak of China, the memory of my teen years about the new tech, advertisements, and thriving industries.  L2 starts to have the space squeeze compared to the L1, the flying space becomes narrower(1920*945).
@@ -218,31 +330,51 @@
 
         <div style="height:75px;"></div>
 
-        <div class = "StateMachineWapper L3">
-            <div class="StateMachine" data-left="leftButton3" data-right="rightButton3">
-                <img id="leftButton3" class="button" src="Infinite/2Arrow0.png" alt="Left Button">
-                <div class="Bird">
-                    <img src="Infinite/2Staying.gif" alt="Bird State">
-                    <img src="Infinite/2Walking.gif" alt="Bird State">
-                    <img src="Infinite/2Flying.gif" alt="Bird State">
-                    <img src="Infinite/2Loop.gif" alt="Bird State">
-                    <img src="Infinite/2Dead.gif" alt="Bird State">
-                    <img src="Infinite/2Wetted.gif" alt="Bird State">
-                    <img src="Infinite/2WettedStaying.gif" alt="Bird State">
-                    <img src="Infinite/2WettedWalking.gif" alt="Bird State">
-                    <img src="Infinite/2WettedFlying.gif" alt="Bird State">
-                    <img src="Infinite/2WettedLoop.gif" alt="Bird State">
-                    <img src="Infinite/2WettedDead.gif" alt="Bird State">
-                    <img src="Infinite/2Finsihed.gif" alt="Bird State">
+        <div class="fullsample">
+            <div class = "HoverImage">
+                <img src = "Infinite/06.png" class = "normal">
+                <video class="hover" muted loop playsinline preload="auto">
+                    <source src="Infinite/06.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <p>
+                Screenshot of <em>Level 3</em>. Embeded and illustrated in <a>August 2024</a>.
+            </p>
+        </div>
+
+        <div style="height:75px;"></div>
+
+        <div class = "fullsample">
+            <div class = "StateMachineWapper L3">
+                <div class="StateMachine" data-left="leftButton3" data-right="rightButton3">
+                    <img id="leftButton3" class="button" src="Infinite/2Arrow0.png" alt="Left Button">
+                    <div class="Bird">
+                        <img src="Infinite/2Staying.gif" alt="Bird State">
+                        <img src="Infinite/2Walking.gif" alt="Bird State">
+                        <img src="Infinite/2Flying.gif" alt="Bird State">
+                        <img src="Infinite/2Loop.gif" alt="Bird State">
+                        <img src="Infinite/2Dead.gif" alt="Bird State">
+                        <img src="Infinite/2Wetted.gif" alt="Bird State">
+                        <img src="Infinite/2WettedStaying.gif" alt="Bird State">
+                        <img src="Infinite/2WettedWalking.gif" alt="Bird State">
+                        <img src="Infinite/2WettedFlying.gif" alt="Bird State">
+                        <img src="Infinite/2WettedLoop.gif" alt="Bird State">
+                        <img src="Infinite/2WettedDead.gif" alt="Bird State">
+                        <img src="Infinite/2Finsihed.gif" alt="Bird State">
+                    </div>
+                    <img id="rightButton3" class="button flipped" src="Infinite/2Arrow0.png" alt="Right Button">
                 </div>
-                <img id="rightButton3" class="button flipped" src="Infinite/2Arrow0.png" alt="Right Button">
+                <div class = "BirdDescription">
+                    <h4>STAYING</h4>
+                    <p>
+                        L2 represents the first phase of the clawless sparrow’s life: the early childhood of General Z Chinese students (2008-2013), while they experienced an economic boom and the late phase of the one-child policy. 
+                    </p>
+                </div>
             </div>
-            <div class = "BirdDescription">
-                <h4>STAYING</h4>
-                <p>
-                    L2 represents the first phase of the clawless sparrow’s life: the early childhood of General Z Chinese students (2008-2013), while they experienced an economic boom and the late phase of the one-child policy. 
-                </p>
-            </div>
+             <p>
+                <em>Level 3 Protagonist State</em>. Designed and illustrated in <a>May 2024</a>.
+            </p>
         </div>
         <p>
             The main character for this level is a teenager with medium color, who owns less energy, and takes more time to recover energy than the first stage, however, it is faster, actually the fastest. In this stage, the player will feel like the sparrow is less energetic, in a rush, and probably harder to control.
@@ -256,23 +388,27 @@
         <h3>NPC1</h3>
         <img src="Infinite/NPC01.png">
         </div>
-        <div class = "StateMachineWapper">
-            <div class="StateMachine" data-left="leftButton4" data-right="rightButton4">
-                <img id="leftButton4" class="button" src="Infinite/0Arrow0.png" alt="Left Button">
-                <div class="Bird">
-                    <img src="Infinite/N2Staying.gif" alt="Bird State">
-                    <img src="Infinite/N2Flying.gif" alt="Bird State">
-                    <img src="Infinite/N2Finished.gif" alt="Bird State">
-                    <img src="Infinite/N2Dead.gif" alt="Bird State">
+
+        <div class = "fullsample">
+            <div class = "StateMachineWapper">
+                <div class="StateMachine" data-left="leftButton4" data-right="rightButton4">
+                    <img id="leftButton4" class="button" src="Infinite/0Arrow0.png" alt="Left Button">
+                    <div class="Bird">
+                        <img src="Infinite/N2Staying.gif" alt="Bird State">
+                        <img src="Infinite/N2Flying.gif" alt="Bird State">
+                        <img src="Infinite/N2Finished.gif" alt="Bird State">
+                        <img src="Infinite/N2Dead.gif" alt="Bird State">
+                    </div>
+                    <img id="rightButton4" class="button flipped" src="Infinite/0Arrow0.png" alt="Right Button">
                 </div>
-                <img id="rightButton4" class="button flipped" src="Infinite/0Arrow0.png" alt="Right Button">
+                <div class = "BirdDescription">
+                    <h4>STAYING</h4>
+                    <p>
+                        L2 represents the first phase of the clawless sparrow’s life: the early childhood of General Z Chinese students (2008-2013), while they experienced an economic boom and the late phase of the one-child policy. 
+                    </p>
+                </div>
             </div>
-            <div class = "BirdDescription">
-                <h4>STAYING</h4>
-                <p>
-                    L2 represents the first phase of the clawless sparrow’s life: the early childhood of General Z Chinese students (2008-2013), while they experienced an economic boom and the late phase of the one-child policy. 
-                </p>
-            </div>
+            <p><em>NPC1 State</em>. Designed and illustrated in <a>May 2024</a>.</p>
         </div>
 
         <div style="height:75px;"></div>
@@ -282,23 +418,27 @@
         <h3>NPC2</h3>
         <img src="Infinite/NPC11.png">
         </div>
-        <div class = "StateMachineWapper L2">
-            <div class="StateMachine" data-left="leftButton5" data-right="rightButton5">
-                <img id="leftButton5" class="button" src="Infinite/1Arrow0.png" alt="Left Button">
-                <div class="Bird">
-                    <img src="Infinite/N0Staying.gif" alt="Bird State">
-                    <img src="Infinite/N0Flying.gif" alt="Bird State">
-                    <img src="Infinite/N0Finished.gif" alt="Bird State">
-                    <img src="Infinite/N0Dead.gif" alt="Bird State">
+
+        <div class = "fullsample">
+            <div class = "StateMachineWapper L2">
+                <div class="StateMachine" data-left="leftButton5" data-right="rightButton5">
+                    <img id="leftButton5" class="button" src="Infinite/1Arrow0.png" alt="Left Button">
+                    <div class="Bird">
+                        <img src="Infinite/N0Staying.gif" alt="Bird State">
+                        <img src="Infinite/N0Flying.gif" alt="Bird State">
+                        <img src="Infinite/N0Finished.gif" alt="Bird State">
+                        <img src="Infinite/N0Dead.gif" alt="Bird State">
+                    </div>
+                    <img id="rightButton5" class="button flipped" src="Infinite/1Arrow0.png" alt="Right Button">
                 </div>
-                <img id="rightButton5" class="button flipped" src="Infinite/1Arrow0.png" alt="Right Button">
+                <div class = "BirdDescription">
+                    <h4>STAYING</h4>
+                    <p>
+                        L2 represents the first phase of the clawless sparrow’s life: the early childhood of General Z Chinese students (2008-2013), while they experienced an economic boom and the late phase of the one-child policy. 
+                    </p>
+                </div>
             </div>
-            <div class = "BirdDescription">
-                <h4>STAYING</h4>
-                <p>
-                    L2 represents the first phase of the clawless sparrow’s life: the early childhood of General Z Chinese students (2008-2013), while they experienced an economic boom and the late phase of the one-child policy. 
-                </p>
-            </div>
+            <p><em>NPC2 State</em>. Designed and illustrated in <a>May 2024</a>.</p>
         </div>
 
         <div style="height:75px;"></div>
@@ -308,23 +448,27 @@
         <h3>NPC3</h3>
         <img src="Infinite/NPC21.png">
         </div>
-        <div class = "StateMachineWapper L3">
-            <div class="StateMachine" data-left="leftButton6" data-right="rightButton6">
-                <img id="leftButton6" class="button" src="Infinite/2Arrow0.png" alt="Left Button">
-                <div class="Bird">
-                    <img src="Infinite/N1Staying.gif" alt="Bird State">
-                    <img src="Infinite/N1Flying.gif" alt="Bird State">
-                    <img src="Infinite/N1Finished.gif" alt="Bird State">
-                    <img src="Infinite/N1Dead.gif" alt="Bird State">
+
+        <div class="fullsample">
+            <div class = "StateMachineWapper L3">
+                <div class="StateMachine" data-left="leftButton6" data-right="rightButton6">
+                    <img id="leftButton6" class="button" src="Infinite/2Arrow0.png" alt="Left Button">
+                    <div class="Bird">
+                        <img src="Infinite/N1Staying.gif" alt="Bird State">
+                        <img src="Infinite/N1Flying.gif" alt="Bird State">
+                        <img src="Infinite/N1Finished.gif" alt="Bird State">
+                        <img src="Infinite/N1Dead.gif" alt="Bird State">
+                    </div>
+                    <img id="rightButton6" class="button flipped" src="Infinite/2Arrow0.png" alt="Right Button">
                 </div>
-                <img id="rightButton6" class="button flipped" src="Infinite/2Arrow0.png" alt="Right Button">
+                <div class = "BirdDescription">
+                    <h4>STAYING</h4>
+                    <p>
+                        L2 represents the first phase of the clawless sparrow’s life: the early childhood of General Z Chinese students (2008-2013), while they experienced an economic boom and the late phase of the one-child policy. 
+                    </p>
+                </div>
             </div>
-            <div class = "BirdDescription">
-                <h4>STAYING</h4>
-                <p>
-                    L2 represents the first phase of the clawless sparrow’s life: the early childhood of General Z Chinese students (2008-2013), while they experienced an economic boom and the late phase of the one-child policy. 
-                </p>
-            </div>
+            <p><em>NPC3 State</em>. Designed and illustrated in <a>May 2024</a>.</p>
         </div>
 
         <div style="height:75px;"></div>
@@ -333,6 +477,28 @@
         <img src="Infinite/Narrator0.png" class = "Narrator">
         <h3>Narrator</h3>
         <img src="Infinite/Narrator1.png" class = "Narrator">
+        </div>
+
+        <div class = "gallerysample">
+            <div class="HoverImage">
+                <div class="galleryitem">
+                    <img src="Infinite/01.png" class="normal">
+                </div>
+                <div class="galleryitem">
+                    <img src="Infinite/02.png" class="normal">
+                </div>
+                <div class="galleryitem">
+                    <img src="Infinite/03.png" class="normal">
+                </div>
+            </div>
+            <div class="thumbnails">
+                <div class="thumb"><img src="Infinite/01.png"></div>
+                <div class="thumb"><img src="Infinite/02.png"></div>
+                <div class="thumb"><img src="Infinite/03.png"></div>
+            </div>
+            <p>
+            (P1-P3) <em>Narrator under 4 Circumstances</em> in 3 Levels. Designed in <a>August 2024</a>.
+            </p>
         </div>
 
         <div style="height:200px;"></div>
@@ -346,16 +512,16 @@
 
         <div class = "sidework">
             <div class="Itch">
-            <a href="https://ah-0811.itch.io/the-adventurer">
+            <a href="https://ah-0811.itch.io/infinite">
                 <img src="Index/Sample1.png" alt="The Adventurer">
             </a>
 
-            <a href="https://ah-0811.itch.io/the-adventurer" class="logo-link">
+            <a href="https://ah-0811.itch.io/infinite" class="logo-link">
                 <img src="TheAdventurer/itchicon0.svg" alt="Itch.io Logo" class="itch-normal">
                 <img src="TheAdventurer/itchicon1.svg" alt="Itch.io Logo" class="itch-hover">
             </a>
 
-            <a href="https://ah-0811.itch.io/the-adventurer">
+            <a href="https://ah-0811.itch.io/infinite">
             <h3>Available to play at Itch.io</h3>
             </a>
         </div>
@@ -367,8 +533,24 @@
                 allowfullscreen>
             </iframe>
             <a href="https://www.youtube.com/watch?v=67w2KbemXj0">
-                <h3>Game Trailer available to watch</h3>
+                <h3>Walkthrough Available to Watch</h3>
             </a>
+        </div>
+
+        <div class = "JumpTo">
+        <h3>JUMP TO :</h3>
+        <h3><a href="#Home">HOME</a></h3>
+        <h3><a href="#Vision">VISION</a></h3>
+        <p><a href="#Motive">Motive</a></p>
+        <p><a href="#Inspiration">Inspiration</a></p>
+        <p><a href="#Aesthetic">Aesthetic</a></p>
+        <h3><a href="#Design">DESIGN</a></h3>
+        <p><a href="#System">Levels</a></p>
+        <p><a href="#Scene">NPCs</a></p>
+        <h3><a href="#Play">PLAY</a></h3>
+        <p><a href="#Vision">Walkthrough</a></p>
+        <p><a href="#Vision">Platform</a></p>
+
         </div>
 
     </div>
