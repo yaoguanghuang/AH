@@ -189,7 +189,48 @@ html, body {
     height: 100vh; 
     display: flex;
     flex-direction: column;
+}
 
+.JumpTo {
+    width: 320px;
+    margin-top: auto; 
+    margin-bottom: 25px; 
+    text-align: right;
+}
+
+.JumpTo h3 {
+    font-family: "Digital", serif;
+    font-weight: 600;
+    font-size: 20px;
+    padding-bottom: 7.5px;
+    color:white;
+    text-decoration: underline;
+    letter-spacing: 1px;
+}
+
+.JumpTo h3 a{
+    font-weight: 600;
+    color:#ffbf5c;
+}
+
+.JumpTo h3 a:hover{
+    color:#ff9900;
+}
+
+.JumpTo p{
+    padding-bottom: 7.5px;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.JumpTo p a{
+    font-family: "Digital", serif;
+    font-weight: 600;
+    color:#4d1be1;
+}
+
+.JumpTo p a:hover{
+    color:#30167f;
 }
 
 .sidework::-webkit-scrollbar {
@@ -236,7 +277,7 @@ html, body {
 .Itch {
     width: 320px;
     height: 180px;
-    padding-top: 5px;
+    padding-top: 25px;
     padding-bottom: 25px;
     margin-top: 0px;
     position: relative; 
@@ -308,48 +349,6 @@ html, body {
     color:#ff9900;             
     text-decoration: underline;  
     text-decoration-color: #ff9900;
-}
-
-.JumpTo {
-    width: 320px;
-    margin-top: auto; 
-    margin-bottom: 25px; 
-    text-align: right;
-}
-
-.JumpTo h3 {
-    font-family: "Digital", serif;
-    font-weight: 600;
-    font-size: 20px;
-    padding-bottom: 7.5px;
-    color:white;
-    text-decoration: underline;
-    letter-spacing: 1px;
-}
-
-.JumpTo h3 a{
-    font-weight: 600;
-    color:#ffbf5c;
-}
-
-.JumpTo h3 a:hover{
-    color:#ff9900;
-}
-
-.JumpTo p{
-    padding-bottom: 7.5px;
-    font-size: 16px;
-    letter-spacing: 1px;
-}
-
-.JumpTo p a{
-    font-family: "Digital", serif;
-    font-weight: 600;
-    color:#4d1be1;
-}
-
-.JumpTo p a:hover{
-    color:#30167f;
 }
 
 .contents {
@@ -535,6 +534,19 @@ h4{
     background-size: auto 240px;
     background-position: center;
     border-radius: 3px;
+}
+
+.CharacterWapper{
+    margin: auto;
+    width: 100%;
+    height: 300px;
+    border-radius: 3px;
+    align-items: center !important;
+}
+
+.CharacterWapper img{
+    height: 300px !important;
+    width: auto !important;
 }
 
 .StateMachineWapper.L2{
