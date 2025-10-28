@@ -24,7 +24,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const img = currentItem.querySelector('img');
         if (img) {
           const imgHeight = img.getBoundingClientRect().height;
-          if (imgHeight > 500) currentItem.style.border = '3px solid black';
         }
       }
 
