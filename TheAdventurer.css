@@ -504,13 +504,24 @@ em:hover {
     width: 100%;
 }
 
+.gallerysample .galleryitem {
+    display: none;
+    width: 100%;
+    height: auto;
+    border-radius: 1.5px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    overflow-x: hidden; 
+    position: relative;
+    background-color: #b99b67;
+}
+
 .gallerysample .HoverImage img,
 .gallerysample .HoverImage video {
     width: 100%;
     height: auto;
     display: block;
     object-fit: contain;
-    transition: opacity 0.25s ease;
 }
 
 .gallerysample .HoverImage .hover {
@@ -518,23 +529,6 @@ em:hover {
     position: absolute;
     top: 0;
     left: 0;
-}
-
-
-.gallerysample .galleryitem {
-    display: none;       
-    max-height: 500px; 
-    border-radius: 1.5px;
-    overflow: auto;    
-    position: relative;
-    background-color: #b99b67;
-}
-
-.gallerysample .galleryitem img {
-    width: 100%;         
-    height: auto;  
-    display: block;
-    object-fit: contain;
 }
 
 .gallerysample .thumbnails {

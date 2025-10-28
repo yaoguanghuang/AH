@@ -70,6 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+
 document.addEventListener('DOMContentLoaded', () => {
     const galleryItems = document.querySelectorAll('.galleryitem, .HoverImage');
 

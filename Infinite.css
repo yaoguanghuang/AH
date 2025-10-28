@@ -697,20 +697,14 @@ h4{
     left: 0;
 }
 
-
 .gallerysample .galleryitem {
     display: none;       
-    max-height: 500px; 
+    width: 100%;
+    height: auto;
     border-radius: 1.5px;
+    box-sizing: border-box;
     overflow: auto;    
     position: relative;
-}
-
-.gallerysample .galleryitem img {
-    width: 100%;         
-    height: auto;  
-    display: block;
-    object-fit: contain;
 }
 
 .gallerysample .thumbnails {
