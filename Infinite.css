@@ -386,7 +386,7 @@ html, body {
     color: #ff9900;
 }
 
-em {
+.fullsample em {
   font-style: italic;
   text-decoration: underline;
   font-weight:600;
@@ -394,7 +394,7 @@ em {
   color:#4d1be1;
 }
 
-em:hover {
+.fullsample em:hover {
   color:#30167f;
 }
 
@@ -503,6 +503,7 @@ h4{
     font-family: "Fredoka", sans-serif;
     font-weight: 600px;
     color: white;
+    font-size: 20px;
 }
 
 .StateMachineWapper .BirdDescription{

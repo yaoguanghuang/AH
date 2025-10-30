@@ -162,15 +162,6 @@ html, body {
     padding-top: 20px;
 }
 
-.Contents h2 {
-    color:rgb(0, 0, 0);
-    font-size: 40px;
-    text-align: center;
-    pointer-events: none;
-    font-family:  "Fredoka", sans-serif;
-    font-style: normal;
-}
-
 .Contents p{
     margin:auto;
     text-align: left;
@@ -178,12 +169,12 @@ html, body {
     font-weight: 400;
     font-style: normal;
     padding-bottom:10px;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .Contents p em {
     font-style: italic;
-    font-weight:bold;
+    font-weight:600;
     color:#b11f29;
   }
 
@@ -393,7 +384,6 @@ html, body {
   overflow-y: auto;
   padding: 20px;
   background-color: white;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -422,7 +412,7 @@ html, body {
 
 .sidework .IAFTYAY h3 {
   margin-top: 10px;
-  font-size: 16px;
+  font-size: 18px;
   color: #b11f29;
   font-family: "Fredoka", sans-serif;
   text-decoration: underline;

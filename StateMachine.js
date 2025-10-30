@@ -1,42 +1,55 @@
 class StateMachine {
-  constructor(containerDiv, leftBtn, rightBtn) {
+  constructor(containerDiv, leftBtn, rightBtn, descriptionBox) {
     this.images = Array.from(containerDiv.querySelectorAll("img"));
     this.leftBtn = leftBtn;
     this.rightBtn = rightBtn;
+    this.descriptionBox = descriptionBox;
     this.currentIndex = 0;
-    this.images.forEach((img, i) => {
-      img.style.display = i === 0 ? "block" : "none";
-    });
+
+    this.updateStateDisplay();
+
     this.leftBtn.addEventListener("click", () => this.prevState());
     this.rightBtn.addEventListener("click", () => this.nextState());
   }
 
+  updateStateDisplay() {
+    this.images.forEach((img, i) => {
+      img.style.display = i === this.currentIndex ? "block" : "none";
+    });
+
+    const currentImg = this.images[this.currentIndex];
+    const title = currentImg.dataset.title || "";
+    const text = currentImg.dataset.text || "";
+
+    const h4 = this.descriptionBox.querySelector("h4");
+    const p = this.descriptionBox.querySelector("p");
+    if (h4) h4.textContent = title;
+    if (p) p.textContent = text;
+  }
+
   prevState() {
-    this.images[this.currentIndex].style.display = "none";
     this.currentIndex = (this.currentIndex - 1 + this.images.length) % this.images.length;
-    this.images[this.currentIndex].style.display = "block";
+    this.updateStateDisplay();
   }
 
   nextState() {
-    this.images[this.currentIndex].style.display = "none";
     this.currentIndex = (this.currentIndex + 1) % this.images.length;
-    this.images[this.currentIndex].style.display = "block";
+    this.updateStateDisplay();
   }
 }
 
 window.addEventListener("DOMContentLoaded", () => {
-  const containers = document.querySelectorAll(".StateMachine");
+  const wrappers = document.querySelectorAll(".StateMachineWapper");
 
-  containers.forEach(container => {
-    const leftBtnId = container.dataset.left;
-    const rightBtnId = container.dataset.right;
+  wrappers.forEach(wrapper => {
+    const machine = wrapper.querySelector(".StateMachine");
+    const birdDiv = machine.querySelector(".Bird");
+    const leftBtn = document.getElementById(machine.dataset.left);
+    const rightBtn = document.getElementById(machine.dataset.right);
+    const descriptionBox = wrapper.querySelector(".BirdDescription");
 
-    const leftBtn = document.getElementById(leftBtnId);
-    const rightBtn = document.getElementById(rightBtnId);
-
-    const stateContainer = container.querySelector("div");
-
-    new StateMachine(stateContainer, leftBtn, rightBtn);
+    new StateMachine(birdDiv, leftBtn, rightBtn, descriptionBox);
   });
 });
+
 
