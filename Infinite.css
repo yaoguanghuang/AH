@@ -62,7 +62,7 @@ html, body {
 
 .sidebar h1 {
     font-family: "Fredoka", sans-serif;
-    font-size: 40px;
+    font-size: 44px;
     margin: 0;
     display: block;
     font-weight: 600;
@@ -258,7 +258,7 @@ html, body {
     text-align: center;
     font-family: "Fredoka", sans-serif;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 18px;
     font-style: italic;
 }
 
@@ -292,7 +292,7 @@ html, body {
 
 .Itch .logo-link {
     position: absolute;
-    top: 37.5%;
+    top: 42.5%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 120px;
@@ -335,7 +335,7 @@ html, body {
     text-align: center;
     font-family: "Fredoka", sans-serif;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 18px;
     font-style: italic;
 }
 
@@ -365,7 +365,7 @@ html, body {
 }
 
 .contents .fullsample p{
-    font-size: 14px;
+    font-size: 16px;
     text-align: left;
     padding-top: 5px;
     margin-bottom: 1%;
@@ -425,7 +425,7 @@ html, body {
     text-align: left;
     font-family: "Fredoka", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 18px;
     padding-bottom: 10px;
 }
 
@@ -750,7 +750,7 @@ h4{
 }
 
 .contents .gallerysample p{
-    font-size: 14px;
+    font-size: 16px;
     text-align: left;
     padding-top: 5px;
     margin-bottom: 0px;
