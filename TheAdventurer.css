@@ -207,12 +207,11 @@ html, body {
 
 .JumpTo h3 a{
     font-family: "Typwrng";
-    font-weight: 600;
     color:#8e2828
 }
 
 .JumpTo h3 a:hover{
-    color:#602321;
+    color:#114722;
 }
 
 .sidework p{
@@ -227,7 +226,7 @@ html, body {
 }
 
 .sidework p a:hover{
-    color:#114722;
+    color:#602321;
 }
 
 .sidework::-webkit-scrollbar {
@@ -268,7 +267,8 @@ html, body {
 .Walkthrough a h3:hover{
     color: #602321;                   
     text-decoration: underline;  
-    text-decoration-color: #602321;   
+    text-decoration-color: #602321;
+    font-weight: 800;
 }
 
 .Itch {
@@ -346,6 +346,7 @@ html, body {
     color: #1e3328;             
     text-decoration: underline;  
     text-decoration-color: #1e3328;
+    font-weight: 800;
 }
 
 .contents {
@@ -481,7 +482,7 @@ html, body {
 em {
   font-style: italic;
   text-decoration: underline;
-  font-weight:600;
+  font-weight:800;
   transition: 0.2s ease;
   color: #114722;
 }

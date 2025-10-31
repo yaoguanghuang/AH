@@ -1,6 +1,6 @@
 const book = document.querySelector('#book');
 const papers = [];
-for (let i = 1; i <= 15; i++) {
+for (let i = 1; i <= 25; i++) {
     papers.push(document.querySelector(`#p${i}`));
 }
 

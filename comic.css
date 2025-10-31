@@ -172,15 +172,8 @@ html, body {
     font-size: 18px;
 }
 
-.Contents p em {
-    font-style: italic;
-    font-weight:600;
-    color:#b11f29;
-  }
-
 .Contents .caption{
     text-align:left;
-    margin:auto;
     width:900px;
     font-size: 16px;
     font-family:  "Fredoka", sans-serif;
@@ -190,6 +183,19 @@ html, body {
     padding-top: 5px;
 }
 
+.Contents .caption em{
+    font-weight: 800;
+    font-style: italic;
+    color:black;
+    text-decoration: underline;
+}
+
+.Contents .caption a{
+    font-weight: 800;
+    font-style: italic;
+    color:#b11f29;
+    text-decoration: underline;
+}
 
 .Strip{
     margin:auto;
@@ -203,23 +209,8 @@ html, body {
 
 .Strip img {
     width: 427.5px;
-    display:flex;
+    height: auto;
     transform: scale(1);  
-}
-
-.SingleStrip{
-    margin:auto;
-    width:427.5px;
-    margin-bottom:5px;
-    margin-top:30px;
-    border: 2px solid black;
-}
-
-.SingleStrip img{
-    width:427.5px;
-    display:flex;
-    height:auto;
-    transform: scale(1);
 }
 
 .Contents div {
@@ -315,64 +306,105 @@ html, body {
 }
 
 #p1 {
-    z-index: 14;
+    z-index: 25;
 }
 
 #p2 {
-    z-index: 13;
+    z-index: 24;
 }
 
 #p3 {
+    z-index: 23;
+}
+
+#p4 {
+    z-index: 22;
+}
+
+#p5 {
+    z-index: 21;
+}
+
+#p6 {
+    z-index: 20;
+}
+
+#p7 {
+    z-index: 19;
+}
+
+#p8 {
+    z-index: 18;
+}
+
+#p9 {
+    z-index: 17;
+}
+
+#p10 {
+    z-index: 16;
+}
+
+#p11 {
+    z-index: 15;
+}
+
+#p12 {
+    z-index: 14;
+}
+
+#p13 {
+    z-index: 13;
+}
+
+#p14 {
     z-index: 12;
 }
 
-#p4{
+#p15 {
     z-index: 11;
 }
 
-#p5{
-    z-index: 11;
-}
-
-#p6{
+#p16 {
     z-index: 10;
 }
 
-#p7{
+#p17 {
     z-index: 9;
 }
 
-#p8{
+#p18 {
     z-index: 8;
 }
 
-#p9{
+#p19 {
     z-index: 7;
 }
 
-#p10{
+#p20 {
     z-index: 6;
 }
 
-#p11{
+#p21 {
     z-index: 5;
 }
 
-#p12{
+#p22 {
     z-index: 4;
 }
 
-#p13{
+#p23 {
     z-index: 3;
 }
 
-#p14{
+#p24 {
     z-index: 2;
 }
 
-#p15{
+#p25 {
     z-index: 1;
 }
+
 
 .sidework {
   position: fixed;
@@ -413,9 +445,19 @@ html, body {
 .sidework .IAFTYAY h3 {
   margin-top: 10px;
   font-size: 18px;
-  color: #b11f29;
+  color: black;
   font-family: "Fredoka", sans-serif;
   text-decoration: underline;
+  font-style: italic;
   font-weight: 600;
+}
+
+.sidework .IAFTYAY h3 a{
+  color: #b11f29;
+}
+
+.sidework .IAFTYAY h3 a:hover{
+  color: black;
+  font-weight: 800;
 }
 
