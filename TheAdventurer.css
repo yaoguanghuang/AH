@@ -508,14 +508,16 @@ em:hover {
     display: none;
     width: 100%;
     height: auto;
-    max-height: 70vh;
-    border-radius: 1.5px;
-    box-sizing: border-box;
-    overflow-y: auto;
-    overflow-x: hidden; 
+    overflow: hidden;
     position: relative;
     background-color: #b99b67;
 }
+
+.gallerysample .galleryitem.tall {
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
 
 .gallerysample .HoverImage img,
 .gallerysample .HoverImage video {
