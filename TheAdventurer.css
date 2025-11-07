@@ -508,6 +508,7 @@ em:hover {
     display: none;
     width: 100%;
     height: auto;
+    max-height: 70vh;
     border-radius: 1.5px;
     box-sizing: border-box;
     overflow-y: auto;
