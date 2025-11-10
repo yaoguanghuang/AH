@@ -103,14 +103,35 @@ html, body {
     border-radius: 8px;
 }
 
-.links .footer {
+.links .Resume {
     margin-top: auto; 
-    color: black;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
-    padding-bottom: 20px; 
+    text-decoration: underline;
 }
 
+.links .Resume a {   
+  width: 90%;         
+  text-align: center; 
+  color: #9caadd;
+  padding-bottom: 2.5px;
+}
+
+.links .Resume:hover {        
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.links .Resume a:hover {        
+    font-weight: 800;
+    color:#002fa7
+}
+
+.links .footer {
+    margin-top: 0; 
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px; 
+}
 
 .links .footer:hover {        
     background-color: rgba(255, 255, 255, 0);

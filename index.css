@@ -103,18 +103,39 @@ html, body {
     border-radius: 8px;
 }
 
-.links .footer {
+.links .Resume {
     margin-top: auto; 
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.links .Resume a {   
+  width: 90%;         
+  text-align: center; 
+  color: rgb(150, 150, 150);
+  padding-bottom: 2.5px;
+}
+
+.links .Resume:hover {        
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.links .Resume a:hover {        
+    font-weight: 800;
+    color:black;
+}
+
+.links .footer {
+    margin-top: 0; 
     color: black;
     font-size: 16px;
     font-weight: 600;
-    padding-bottom: 20px; 
+    margin-bottom: 20px; 
 }
-
 
 .links .footer:hover {        
     background-color: rgba(255, 255, 255, 0);
-    font-size: 16px;
 }
 
 .links .footer span{
@@ -267,6 +288,10 @@ html, body {
     font-style: italic;
     text-decoration: underline;
     color: black;
+}
+
+.contents .fullsample p a:hover{
+    color: rgb(150, 150, 150);
 }
 
 .contents h1 {
