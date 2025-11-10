@@ -99,7 +99,7 @@ html, body {
 }
 
 .links li:hover {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 47, 167, 0.1);
     border-radius: 8px;
 }
 

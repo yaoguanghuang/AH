@@ -125,7 +125,7 @@ html, body {
 }
 
 .links li:hover {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(29, 11, 96, 0.1);
     border-radius: 8px;
 }
 
