@@ -120,6 +120,11 @@ html, body {
     font-size: 22px; 
 }
 
+.links li span.fa-solid.fa-circle-play {
+    font-size: 20px; 
+}
+
+
 .links li span.fa-brands {
     font-size: 22px; 
 }
@@ -140,6 +145,7 @@ html, body {
   width: 90%;         
   text-align: center; 
   color: #8e2828;
+  text-decoration-color: #8e2828;
   padding-bottom: 2.5px;
 }
 
@@ -150,6 +156,7 @@ html, body {
 .links .Resume a:hover {        
     font-weight: 800;
     color:#114722;
+    text-decoration-color: #114722;
 }
 
 .links .footer {

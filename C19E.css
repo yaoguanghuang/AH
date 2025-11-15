@@ -98,6 +98,10 @@ html, body {
     font-size: 22px; 
 }
 
+.links li span.fa-solid.fa-circle-play {
+    font-size: 20px; 
+}
+
 .links li:hover {
     background-color: rgba(0, 47, 167, 0.1);
     border-radius: 8px;
@@ -114,6 +118,7 @@ html, body {
   width: 90%;         
   text-align: center; 
   color: #9caadd;
+  text-decoration-color:#9caadd;
   padding-bottom: 2.5px;
 }
 
@@ -123,7 +128,8 @@ html, body {
 
 .links .Resume a:hover {        
     font-weight: 800;
-    color:#002fa7
+    color:#002fa7;
+    text-decoration-color:#002fa7;
 }
 
 .links .footer {
