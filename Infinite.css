@@ -211,15 +211,15 @@ html, body {
 .sidework {
     position: fixed;
     top: 0;
-    right: 0;
-    width: 25%; 
-    height: 100vh; 
+    right: 3.45%;
+    width: 21.55%; 
+    height: 100%; 
     display: flex;
     flex-direction: column;
 }
 
 .JumpTo {
-    width: 320px;
+    width: 100%;
     margin-top: auto; 
     margin-bottom: 25px; 
     text-align: right;
@@ -266,7 +266,7 @@ html, body {
 
 .Trailer
 {
-    width: 320px;
+    width: 100%;
     height: 180px;
     padding-top: 25px;
     padding-bottom: 25px;
@@ -303,7 +303,7 @@ html, body {
 }
 
 .Itch {
-    width: 320px;
+    width: 100%;
     height: 180px;
     padding-top: 25px;
     padding-bottom: 25px;
@@ -569,14 +569,12 @@ h4{
 .CharacterWapper{
     margin: auto;
     width: 100%;
-    height: 300px;
     border-radius: 3px;
     align-items: center !important;
 }
 
 .CharacterWapper img{
-    height: 300px !important;
-    width: auto !important;
+    width: 100% !important;
 }
 
 .StateMachineWapper.L2{
@@ -607,7 +605,6 @@ h4{
 .Bird img:first-child {
   display: block;
 }
-
 
 .button {
   width: 48px !important;
