@@ -209,8 +209,8 @@ html, body {
 .sidework {
     position: fixed;
     top: 0;
-    right: 3.45%;
-    width: 21.55%; 
+    right: 2%;
+    width: 25%; 
     height: 100%; 
     display: flex;
     flex-direction: column;
