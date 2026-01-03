@@ -38,21 +38,22 @@ html, body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 4%;
+    width: 58px;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    background-color: #ffc5e5;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
     padding-left: 30px;
     transition: width 0.3s ease;
     overflow: hidden;
+    z-index: 9999;
 }
 
 .sidebar:hover {
-    width: 10%;
+    width: 145px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    border-right: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 .sidebar h1 {
@@ -85,11 +86,12 @@ html, body {
     display: flex;
     flex-direction: column;
     height: 100%;
+    overflow-y: hidden;
 }
 
 
 .links li {
-    width:100%;
+   width:100%;
     font-family: "Fredoka", sans-serif;
     font-size: 16px;
     color: #d80067;
@@ -98,7 +100,7 @@ html, body {
     align-items: center;
     padding: 0;
     margin-left: 0; 
-    overflow: hidden;
+    flex-shrink: 0;
     font-weight: 400;
 }
 
@@ -179,6 +181,7 @@ html, body {
     height: 1.5px; 
     display: block; 
     border-radius: 1000px;
+    flex-shrink: 0;
 }
 
 .links li span {
@@ -437,14 +440,15 @@ html, body {
 
 .contents .logo {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 22.5%; 
-    padding-top: 15px;
+    width: 22.5%; 
+    margin-top: 2%;
+    margin-bottom: 1%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .contents .logo img {
-    max-height: 100%; 
+    max-width: 100%; 
     height: auto;      
     width: auto;        
 }

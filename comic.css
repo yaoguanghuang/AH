@@ -16,22 +16,22 @@ html, body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 4%;
+    width: 58px;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    background-color: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border-right: 1px solid rgba(255, 255, 255, 0.4);
     padding-left: 30px;
     transition: width 0.3s ease;
     overflow: hidden;
+    z-index: 9999;
 }
 
 .sidebar:hover {
-    width: 10%;
+    width: 145px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    border-right: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 .sidebar h1 {
@@ -66,18 +66,17 @@ html, body {
     height: 100%;
 }
 
-
 .links li {
     width:100%;
     font-family: "Fredoka", sans-serif;
     font-size: 16px;
-    color: black;
+    color:black;
     display: flex;
     white-space: nowrap;
     align-items: center;
     padding: 0;
     margin-left: 0; 
-    overflow: hidden;
+    flex-shrink: 0;
     font-weight: 400;
 }
 
@@ -159,6 +158,7 @@ html, body {
     height: 1.5px; 
     display: block; 
     border-radius: 1000px;
+    flex-shrink: 0;
 }
 
 .links li span {
@@ -188,11 +188,12 @@ html, body {
     width:57.5%;
     overflow: visible;
     padding-bottom: 20%; 
-    padding-top: 20px;
+    margin-top: 2%;
 }
 
 .Contents p{
     margin:auto;
+    width: 100%;
     text-align: left;
     font-family:  "Fredoka", sans-serif;
     font-weight: 400;
@@ -203,7 +204,7 @@ html, body {
 
 .Contents .caption{
     text-align:left;
-    width:900px;
+    width:100%;
     font-size: 16px;
     font-family:  "Fredoka", sans-serif;
     font-weight: 400;
@@ -228,8 +229,8 @@ html, body {
 
 .Strip{
     margin:auto;
-    height:570px;
-    width:855px;
+    aspect-ratio: 3/2;
+    width:100%;
     border: 2px solid black;
     overflow-x:auto;
     margin-bottom:5px;
@@ -237,7 +238,7 @@ html, body {
 }
 
 .Strip img {
-    width: 427.5px;
+    width: 50%;
     height: auto;
     transform: scale(1);  
 }
@@ -251,14 +252,14 @@ html, body {
     justify-content: center; 
     align-items: center;    
     margin: auto;
-    height: 570px;
-    width: 855px;
+    height: auto;
+    width: 100%;
     gap: 10px;     
 }
 
 .book {
-    width: 427.5px;
-    height: 570px;
+    width: 50%;
+    aspect-ratio: 3/4;
     position: relative;
     transition: transform 0.5s;
     justify-content: center;
@@ -440,16 +441,13 @@ html, body {
   top: 0;
   right: 0;
   width: 25%;
-  min-width: 280px;
   height: 100vh;
   overflow-y: auto;
-  padding: 20px;
+  padding: 2%;
   background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
-
   -ms-overflow-style: none; 
   scrollbar-width: none;
 }
@@ -460,13 +458,13 @@ html, body {
 
 .sidework .IAFTYAY {
   width: 100%;
-  max-width: 320px;
+  aspect-ratio: 16/9;
   text-align: center;
 }
 
 .sidework .IAFTYAY img {
   width: 100%;
-  height: auto; 
+  aspect-ratio: 16/9;
   border-radius: 5px;
   display: block;
 }

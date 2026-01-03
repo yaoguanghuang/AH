@@ -43,21 +43,22 @@ html, body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 4%;
+    width: 58px;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    background-color: transparent;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
     padding-left: 30px;
     transition: width 0.3s ease;
     overflow: hidden;
+    z-index: 9999;
 }
 
 .sidebar:hover {
-    width: 10%;
+    width: 145px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    border-right: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 .sidebar h1 {
@@ -97,13 +98,13 @@ html, body {
     width:100%;
     font-family: "Fredoka", sans-serif;
     font-size: 16px;
-    color: white;
+    color:white;
     display: flex;
     white-space: nowrap;
     align-items: center;
     padding: 0;
     margin-left: 0; 
-    overflow: hidden;
+    flex-shrink: 0;
     font-weight: 400;
 }
 
@@ -183,6 +184,7 @@ html, body {
     height: 1.5px; 
     display: block; 
     border-radius: 1000px;
+    flex-shrink: 0;
 }
 
 .links li span {
@@ -267,16 +269,14 @@ html, body {
 .Trailer
 {
     width: 100%;
-    height: 180px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    margin-top: 0px;
+    aspect-ratio: 16/9;
+    margin-top: 8%;
+    margin-bottom: 16%;
 }
 
 .Trailer iframe{
     width: 100%;
-    height: 100%;
-    border: none;
+    aspect-ratio: 16/9;
     border-radius: 5px
 }
 
@@ -304,16 +304,14 @@ html, body {
 
 .Itch {
     width: 100%;
-    height: 180px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    margin-top: 0px;
+    aspect-ratio: 16/9;
+    margin-top: 8%;
     position: relative; 
 }
 
 .Itch img {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover; 
     border-radius: 5px; 
 }
@@ -460,14 +458,14 @@ html, body {
 
 .contents .logo {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 170px; 
-    padding-top: 20px;
+    width: 22.5%; 
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .contents .logo img {
-    max-height: 170px; 
+    max-width: 100%; 
     height: auto;      
     width: auto;        
 }
