@@ -56,9 +56,8 @@ html, body {
 
 .sidebar:hover {
     width: 145px;
-    background-color:#ceb78420;
+    background-color: rgba(206, 183, 132, 0.2);
     backdrop-filter: blur(5px);
-    border-right: 1px solid #ceb784c0;
 }
 
 .sidebar h1 {
