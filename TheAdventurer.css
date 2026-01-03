@@ -43,12 +43,12 @@ html, body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 58px;
+    width: 6%;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-left: 30px;
+    padding-left: 2%;
     transition: width 0.3s ease;
     overflow: hidden;
     z-index: 9999;
@@ -56,9 +56,9 @@ html, body {
 
 .sidebar:hover {
     width: 145px;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color:#ceb78420;
     backdrop-filter: blur(5px);
-    border-right: 1px solid rgba(255, 255, 255, 0.4);
+    border-right: 1px solid #ceb784c0;
 }
 
 .sidebar h1 {
